@@ -8,16 +8,6 @@ img {
     height: auto;
 }
 
-a {
-  color: #fffed6;
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: #fffed6;
-}
-
 p {
   margin: 0 0 10px;
 }
@@ -46,12 +36,11 @@ h4 {
     clear: both;
 }
 .titlebar {
-    min-height: 67px;
-    height: 67px;
     border: 1px solid transparent;
     color: #ffffff;
     background-image: url('../content/titlebar_image.png');
     background-color: #88bf65;
+    background-size: 100% 100%;
     width: 100%;
     max-width: 100%;
 }
@@ -64,24 +53,25 @@ h4 {
     clear: both;
 }
 .titlebar-container {
-    height: 67px;
-    line-height: 67px;
     padding: 0 13.3% 0 12.8%;
 }
 .titlebar-left {
     float: left;
-}
-.titlebar-left > a {
-    padding: 0 15px;
+    width: 19.4%;
 }
 .titlebar-left > a,
-.titlebar-right > a,
 .titlebar-left > a:link,
-.titlebar-right > a:link,
-.titlebar-left > a:visited,
-.titlebar-right > a:visited {
+.titlebar-left > a:visited {
     color: #ffffff;
-    padding: 0 15px;
+    text-decoration: none;
+    padding: 0 6%;
+}
+.titlebar-right > a,
+.titlebar-right > a:link,
+.titlebar-right > a:visited {
+    padding: 0 2%;
+    text-decoration: none;
+    color: #fffed6;
 }
 .titlebar-left > a:focus,
 .titlebar-left > a:hover,
@@ -91,39 +81,25 @@ h4 {
 }
 .titlebar-right {
     float: right;
+    width: 31.5%;
 }
-.titlebar-right > a {
-    padding: 0 10px;
-}
-
-.facebook {
-    width: 48px; 
-    height: 40px; 
-    vertical-align: middle;
-}
-.instagram {
-    width: 48px; 
-    height: 40px; 
-    vertical-align: middle;
-}
-.twitter {
-    width: 48px; 
-    height: 40px; 
-    vertical-align: middle;
+.facebook,
+.instagram,
+.twitter,
+.line,
+.google {
+    width: 10.8%;
 }
 .youtube {
-    width: 62px; 
-    height: 40px; 
-    vertical-align: middle;
+    width: 13.9%;
 }
-.line {
-    width: 48px; 
-    height: 40px; 
-    vertical-align: middle;
-}
+.facebook,
+.instagram,
+.twitter,
+.youtube,
+.line,
 .google {
-    width: 48px; 
-    height: 40px; 
+    height: 60%; 
     vertical-align: middle;
 }
 .navbar {
@@ -136,9 +112,7 @@ h4 {
 }
 .logo {
     position: absolute;
-    height: 271px;
-    padding-top: 90px; 
-    width: 280px;
+    width: 14.6%;
     left: 11.8%;
 }
 .triangle-down {
@@ -159,25 +133,26 @@ h4 {
 }
 .menu-bar > a {
     color: #000000;
+    text-decoration: none;
 }
 .menu1 {
     height: 151px;
-    line-height: 30px;
     padding-top: 20px;
-    margin-left: 25.1%;
+    margin-left: 23.1%;
     width: 75%;
     border-bottom: 4px solid #4f9588;
 }
 .menu2 {
     padding-top: 20px;
     height: 120px;
-    margin-left: 25.1%;
+    margin-left: 23.1%;
+    width: 75%;
 }
 .menu1 > ul > li,
 .menu2 > ul > li {
     display: inline-block;
     width: 16%;
-    padding: 20px 0 20px 1%;
+    padding: 2% 0 2% 0.5%;
     text-align: center;
     vertical-align: top;
 }
@@ -186,9 +161,9 @@ h4 {
 .menu1 > ul > li a:link,
 .menu2 > ul > li a:link {
     color: #4f9588;
-    font-size: 1.2em;
     font-weight: bold;
     display: inline-block;
+    text-decoration: none;
 }
 .menu1 > ul > li > .active,
 .menu2 > ul > li > .active {
@@ -236,6 +211,7 @@ h4 {
  }
 .submenu > ul > li > a {
     color: #ffffff;
+    text-decoration: none;
     font-weight: bold;
     display: inline-block;
 }
@@ -251,6 +227,7 @@ h4 {
 .submenu > ul > li > ul > li > a:visited {
     color: #ffffff;
     font-weight: lighter;
+    text-decoration: none;
 }
 .submenu > ul > li > a:focus,
 .submenu > ul > li > a:hover,
@@ -261,9 +238,7 @@ h4 {
 .slideshow-container {
     width: 100%;
     max-width: 100%;
-    height: 990px;
     position: relative;
-    padding-top: 338px;
     margin: auto;
     background-color: #ededed;
 }
@@ -276,14 +251,11 @@ h4 {
     top: 65%;
     width: auto;
     margin-top: -22px;
-    padding: 16px 83px;
     color: #c2c2c2;
     transition: 0.6s ease;
 }
-.prev:focus, 
-.next:focus,
-.prev:hover, 
-.next:hover {
+.prev:focus, .next:focus,
+.prev:hover, .next:hover {
     color: #c2c2c2;
 }
 .next {
@@ -327,38 +299,31 @@ h4 {
     background-color: #fffed6;
     background-image: url('../content/NationalAffairs.png');
     background-repeat: no-repeat;
-    background-size: 26% 146px;
-    height: 146px;
     width: 100%;
     max-width: 100%;
 }
 .nationalaffairs-image {
-    width: 23%;
+    width: 22.5%;
     text-align: right;
-    height: 146px;
-    padding: 29px 0;
     float: left;
 }
 .nationalaffairs-image > img {
-    width:94px; 
-    height:88px;
+    width:21.8%; 
+    height:100%;
 }
 .nationalaffairs-content {
     float: left;
     color: #4f9588;
-    height: 146px;
     width: 47%;
-    padding: 40px 0 0 5%;
 }
 .nationalaffairs-content > a,
 .nationalaffairs-other > a {
     color: #4f9588;
+    text-decoration: none;
 }
 .nationalaffairs-other {
     float: left;
-    height: 146px;
     width: 30%;
-    padding: 40px 226px 0 0;
     text-align: right;
 }
 .newsandcalendar-container::before,
@@ -372,35 +337,20 @@ h4 {
 .news {
     background-color: #ffffff;
     float: left;
-    margin: 103px 3% 212px 11.8%;
     width: 43.8%;
 }
-.news-header,
-.calendar-header {
-    border-bottom: 2px solid #4f9588;
-    padding-bottom: 26px;
-    height: 40px;
-    color: #4f9588;
-}
-.border-bottom-3px {
-    border-bottom: 3px solid #4f9588;
-    padding-bottom: 10px;
-}
-.news-header-text {
-    width: 180px;
-    height: 40px;
-}
 .calendar {
-    margin: 103px 11.8% 122px 0px;
     width: 29.3%;
     background-color: #ffffff;
     float: left;
 }
+.news-header,
+.calendar-header {
+    color: #4f9588;
+}
 .news-detail {
     border-bottom: 2px solid #4f9588;
-    padding: 40px 10px;
     color: #4f9588;
-    height: 160px;
 }
 .news-content > ul > li > .active {
     background-color: #fffed6;
@@ -413,25 +363,18 @@ h4 {
     float: left;
     height: 40px;
 }
-.calendar-select {
-    font-size: 1.2em;
-    height: 104px;
-    padding: 35px 0;
-}
 .calendar-select > a,
 .calendar-select > a:link,
 .calendar-select > a:visited,
 .calendar-select > a:focus,
 .calendar-select > a:hover {
     color: #4f9588;
+    text-decoration: none;
 }
 .calendar-now {
     display: inline-block;
     margin: 10px;
     color: #4f9588;
-}
-.calendar-detail {
-    height: 530px;
 }
 .calendar-detail > ul > li {
     float: left;
@@ -441,14 +384,10 @@ h4 {
     background-color: #4f9588;
     color: #fffed6;
     border-bottom: 1px solid #c2c2c2;
-    width: 14%;
-    height: 55px;
-    line-height: 55px;
+    width: 14.2%;
 }
 .calendar-day > li {
-    line-height: 95px;
-    width: 14%;
-    height: 95px;
+    width: 14.2%;
     background-color: #ffffff;
     color: #4f9588;
     border-bottom: 2px solid #c2c2c2;
@@ -464,10 +403,7 @@ h4 {
     border-bottom: 4px solid #ffd400;
 }
 .calendar-content > ul > li {
-    height: 70px;
-    padding: 10px 10px 20px 20px;
     color: #4f9588;
-    margin: 10px 0;
 }
 .calendar-content > ul > .active {
     background-color: #4f9588;
@@ -493,11 +429,9 @@ h4 {
 }
 .slidevideo-container {
     background-color: #ededed;
-    height: 655px;
 }
 .activity-container {
     background-color: #ffffff;
-    height: 1691px;
 }
 .activity-arrow-prev,
 .activity-arrow-next {
@@ -541,25 +475,19 @@ h4 {
     margin: 0 auto;
 }
 .slidevideo-title > p {
-    padding: 80px 0 29px 0;
     margin: 0 auto;
-    width: 100px;
-    height: 151px;
     text-align: center;
     color: #4f9588;
 }
 .activity-title > p {
-    padding: 79px 0 22px 0;
     margin: 0 auto;
     width: 100px;
-    height: 131px;
     text-align: center;
     color: #4f9588;
 }
 .slidevideo-content {
     max-width: 100%;
     width: 100%;
-    height: 410px;
     position: relative;
     margin: 0 auto;
 }
@@ -568,19 +496,12 @@ h4 {
     width: 100%;
     position: relative;
     margin: 0 auto;
-    padding: 63px 7.4% 20px 7.4%;
-}
-.slidevideo-content > div {
-    margin: 44px 1% 0 1%;
 }
 .slidevideo-video {
-    height: 261px;
     background-color: #4f9588; 
     overflow: hidden;
 }
 .slidevideo-text {
-    height: 101px;
-    padding-top: 40px;
     background-color: #fffed6; 
     color: #4f9588;
     overflow: hidden;
@@ -600,25 +521,20 @@ h4 {
 }
 .activity-picture {
     width: 50%;
-    height: 420px;
     background-color: #4f9588; 
     float: left;
     overflow: hidden;
 }
 .activity-article {
     width: 50%;
-    height: 420px;
     background-color: #fffed6;
     color: #4f9588; 
     float: left;
     overflow: hidden;
-}
-.activity-text {
-    padding: 88px 10px 88px 50px;
+    position: relative;
 }
 .activity-others {
-    text-align: right;
-    padding-right: 50px;
+    position: absolute;
 }
 .slidevideo-other,
 .activity-moreother {
@@ -627,17 +543,18 @@ h4 {
     position: relative;
 }
 .slidevideo-other > a {
-    margin-top: 29px;
+    text-decoration: none;
+    color: #fffed6;
 }
 .activity-moreother > a {
-    margin-top: 38px;
+    text-decoration: none;
+    color: #fffed6;
 }
 .footer-link {
     background-color: #eaf9dc;
     width: 100%;
     max-width: 100%;
     color: #4f9588;
-    height: 306px;
 }
 .footer-first > a,
 .footer-second > a,
@@ -646,6 +563,7 @@ h4 {
     color: #4f9588;
     display: block;
     margin: 10px 0;
+    text-decoration: none;
 }
 .footer-first > a:focus,
 .footer-first a:hover,
@@ -673,8 +591,6 @@ h4 {
     background-color: #88bf65;
     color: #ffffff;
     text-align: center;
-    height: 67px;
-    line-height: 67px;
 }
 .footer-copyright > p {
     margin: 0;
@@ -684,10 +600,6 @@ h4 {
     margin-right: 2%;
     width: 29.4%;
     padding: 358px 0 0 11.8%;
-}
-.content-menu > ul {
-    list-style: none;
-    
 }
 .content-menu > ul > li {
     display: block;
@@ -731,6 +643,7 @@ h4 {
     color: #c2c2c2;
     font-size: 0.8em;
     display: inline;
+    text-decoration: none;
 }
 .content-tools {
     float: left;
@@ -792,7 +705,6 @@ h4 {
 }
 .sub-title {
     font-weight: bold;
-    font-size: 1.3em;
 }
 .hidden {
     display: none;
@@ -801,11 +713,9 @@ h4 {
 .others-btn > a:link {
     display: inline-block;
     background-color: #4f9588;
-    width: 212px;
-    height: 69px;
     text-align: center;
-    line-height: 70px;
     color: #fffed6;
+    text-decoration: none;
 }
 .others-btn > a:visited {
     color: #fffed6;
@@ -822,8 +732,172 @@ h4 {
 }
 
 @media (min-width: 1920px) {
+    .titlebar-container {
+        min-height: 67px;
+        height: 67px;
+        line-height: 67px;
+    }
+    .navbar {
+        min-height: 271px;
+        height: 271px;
+        border-bottom: 4px solid #4f9588;
+    }
+    .logo {
+        height: 271px;
+        padding-top: 90px; 
+    }
+    .menu1 {
+        height: 151px;
+        line-height: 30px;
+        padding-top: 20px;
+        border-bottom: 4px solid #4f9588;
+    }
+    .menu2 {
+        padding-top: 20px;
+        height: 120px;
+    }
+    .menu1 > ul > li a,
+    .menu2 > ul > li a,
+    .menu1 > ul > li a:link,
+    .menu2 > ul > li a:link {
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+    .slideshow-container {
+        height: 990px;
+        padding-top: 338px;
+    }
+    .slideshow > img {
+        height: 652px;
+    }
+    .prev, .next {
+        padding: 16px 83px;
+    }
+    .dot-container {
+        bottom: 67px;
+    }
+    .dot {
+        height: 10px;
+        width: 35px;
+    }
+    .nationalaffairs-container {
+        background-size: 27% 146px;
+        height: 146px;
+    }
+    .nationalaffairs-image {
+        height: 146px;
+        padding: 29px 0;
+    }
+    .nationalaffairs-content {
+        height: 146px;
+        padding: 40px 0 0 6%;
+    }
+    .nationalaffairs-other {
+        height: 146px;
+        padding: 40px 11.8% 0 0;
+    }
+    .news {
+        margin: 103px 3% 212px 11.8%;
+    }
+    .calendar {
+        margin: 103px 11.8% 122px 0px;
+    }
+    .news-header,
+    .calendar-header {
+        height: 50px;
+    }
+    .news-header-text {
+        width: 180px;
+        height: 50px;
+    }
+    .calendar-header-text {
+        width: 120px;
+        height: 50px;
+    }
+    .news-detail {
+        border-bottom: 2px solid #4f9588;
+        padding: 40px 10px;
+        color: #4f9588;
+        height: 160px;
+    }
+    .calendar-select {
+        font-size: 1.2em;
+        height: 104px;
+        padding: 35px 0;
+    }
+    .calendar-now {
+        margin: 10px;
+    }
+    .calendar-detail {
+        height: 585px;
+    }
+    .calendar-week > li {
+        height: 55px;
+        line-height: 55px;
+    }
+    .calendar-day > li {
+        line-height: 106px;
+        height: 106px;
+    }
+    .calendar-content > ul > li {
+        height: 95px;
+        padding: 20px 10px 30px 20px;
+    }
+    .slidevideo-container {
+        height: 655px;
+    }
+    .slidevideo-title > p {
+        padding: 80px 0 29px 0;
+        width: 100px;
+    }
+    .slidevideo-content {
+        height: 420px;
+    }
+    .slidevideo-content > div {
+        margin: 44px 1% 0 1%;
+    }
+    .slidevideo-video {
+        height: 261px;
+    }
+    .slidevideo-text {
+        height: 101px;
+        padding-top: 40px;
+    }
+    .slidevideo-other > a {
+        margin-top: 29px;
+    }
     .activity-container {
         height: 1691px;
+    }
+    .activity-title > p {
+        padding: 79px 0 22px 0;
+        height: 131px;
+    }
+    .activity-content {
+        padding: 63px 7.4% 20px 7.4%;
+    }
+    .activity-content > div {
+        height: 420px;
+        margin: 16px 0;
+    }
+    .activity-picture {
+        height: 420px;
+    }
+    .activity-article {
+        height: 420px;
+    }
+    .activity-text {
+        padding: 88px 10px 0 50px;
+    }
+    .activity-others {
+        bottom: 70px;
+        right: 50px;
+    }
+    .activity-moreother > a {
+        margin-top: 38px;
+    }
+    .footer-link {
+        height: 306px;
     }
     .footer-first {
         width: 25%;
@@ -852,68 +926,234 @@ h4 {
         line-height: 15px;
         padding: 0 11.8% 0 20px;
         margin-top: 70px;
+    }
+    .footer-copyright {
+        height: 67px;
+        line-height: 67px;
+    }
+    .others-btn > a,
+    .others-btn > a:link {
+        width: 212px;
+        height: 69px;
+        line-height: 69px;
+    }
+    .sub-title {
+        font-size: 1.3em;
+    }
+    .subtitle-borderbottom {
+        border-bottom: 6px solid #4f9588;
     }
 }
 @media (min-width: 1280px) and (max-width: 1600px) {
+    .titlebar-container {
+        min-height: 46px;
+        height: 46px;
+        line-height: 46px;
+    }
+    .navbar {
+        min-height: 181px;
+        height: 181px;
+        border-bottom: 3px solid #4f9588;
+    }
+    .logo {
+        height: 181px;
+        padding-top: 60px; 
+    }
+    .menu1 {
+        height: 101px;
+        padding-top: 4px;
+        border-bottom: 3px solid #4f9588;
+    }
+    .menu2 {
+        padding-top: 4px;
+        height: 80px;
+    }
+    .slideshow-container {
+        height: 664px;
+        padding-top: 230px;
+    }
+    .slideshow > img {
+        height: 434px;
+    }
+    .prev, .next {
+        padding: 16px 56px;
+    }
+    .dot-container {
+        bottom: 44px;
+    }
+    .dot {
+        height: 7px;
+        width: 22px;
+    }
+    .nationalaffairs-container {
+        background-size: 27% 98px;
+        height: 98px;
+    }
+    .nationalaffairs-image {
+        height: 98px;
+        padding: 15px 0;
+    }
+    .nationalaffairs-content {
+        height: 98px;
+        padding: 25px 0 0 6%;
+    }
+    .nationalaffairs-other {
+        height: 98px;
+        padding: 25px 11.8% 0 0;
+    }
+    .news {
+        margin: 70px 3% 142px 11.8%;
+    }
+    .calendar {
+        margin: 70px 11.8% 81px 0px;
+    }
+    .news-header,
+    .calendar-header {
+        height: 40px;
+    }
+    .news-header-text {
+        width: 170px;
+        height: 40px;
+    }
+    .calendar-header-text {
+        width: 110px;
+        height: 40px;
+    }
+    .news-detail {
+        border-bottom: 2px solid #4f9588;
+        padding: 20px 10px;
+        color: #4f9588;
+        height: 107px;
+    }
+    .calendar-select {
+        font-size: 1.1em;
+        height: 69px;
+        padding: 18px 0;
+    }
+    .calendar-now {
+        margin: 7px;
+    }
+    .calendar-detail {
+        height: 354px;
+    }
+    .calendar-week > li {
+        height: 37px;
+        line-height: 37px;
+    }
+    .calendar-day > li {
+        line-height: 63.4px;
+        height: 63.4px;
+    }
+    .calendar-content > ul > li {
+        height: 64px;
+        padding: 18px 8px 28px 18px;
+        font-size: 0.9em;
+    }
+    .slidevideo-container {
+        height: 436px;
+    }
+    .slidevideo-title > p {
+        padding: 44px 0 19px 0;
+        width: 90px;
+    }
+    .slidevideo-content {
+        height: 281px;
+    }
+    .slidevideo-content > div {
+        margin: 29px 1% 0 1%;
+    }
+    .slidevideo-video {
+        height: 175px;
+    }
+    .slidevideo-text {
+        height: 67px;
+        padding-top: 25px;
+    }
+    .slidevideo-other > a {
+        margin-top: 21px;
+    }
     .activity-container {
-        height: 1691px;
+        height: 1127px;
+    }
+    .activity-title > p {
+        padding: 52px 0 16px 0;
+        width: 90px;
+    }
+    .activity-content {
+        padding: 39px 7.4% 10px 7.4%;
+    }
+    .activity-content > div {
+        height: 278px;
+        margin: 9px 0;
+    }
+    .activity-picture {
+        height: 278px;
+    }
+    .activity-article {
+        height: 278px;
+    }
+    .activity-text {
+        padding: 50px 8px 0 32px;
+    }
+    .activity-others {
+        bottom: 47px;
+        right: 33px;
+    }
+    .activity-moreother > a {
+        margin-top: 28px;
+    }
+    .footer-link {
+        height: 204px;
+    }
+    .footer-first > a, .footer-second > a,
+    .footer-third > a,.footer-forth > a {
+        margin: 5px 0;
+        font-size: 0.9em;
     }
     .footer-first {
-        width: 25%;
-        height: 180px;
-        line-height: 30px;
+        width: 28%;
+        height: 140px;
+        line-height: 25px;
         padding: 0 20px 0 11.8%;
-        margin-top: 70px;
+        margin-top: 30px;
     }
     .footer-second {
-        width: 17.3%;
-        height: 180px;
-        line-height: 30px;
+        width: 18.3%;
+        height: 140px;
+        line-height: 25px;
         padding: 0 20px;
-        margin-top: 70px;
+        margin-top: 30px;
     }
     .footer-third {
-        width: 21.1%;
-        height: 180px;
-        line-height: 30px;
+        width: 17.1%;
+        height: 140px;
+        line-height: 25px;
         padding: 0 20px;
-        margin-top: 70px;
+        margin-top: 30px;
     }
     .footer-forth {
         width: 36.6%;
-        height: 180px;
-        line-height: 15px;
+        height: 140px;
+        line-height: 10px;
         padding: 0 11.8% 0 20px;
-        margin-top: 70px;
+        margin-top: 30px;
     }
-    /*.footer-first {
-        width: 275px;
-        height: 180px;
-        line-height: 30px;
-        padding: 0 20px;
-        margin-top: 70px;
+    .footer-copyright {
+        height: 46px;
+        line-height: 46px;
     }
-    .footer-second {
-        width: 300px;
-        height: 180px;
-        line-height: 30px;
-        padding: 0 20px;
-        margin-top: 70px;
+    .others-btn > a,
+    .others-btn > a:link {
+        width: 142px;
+        height: 45px;
+        line-height: 45px;
     }
-    .footer-third {
-        width: 250px;
-        height: 180px;
-        line-height: 30px;
-        padding: 0 20px;
-        margin-top: 70px;
+    .sub-title {
+        font-size: 1.2em;
     }
-    .footer-forth {
-        width: 455px;
-        height: 180px;
-        line-height: 15px;
-        padding: 0 20px;
-        margin-top: 70px;
-    }*/
+    .subtitle-borderbottom {
+        border-bottom: 5px solid #4f9588;
+    }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
     .titlebar-container {
@@ -1240,5 +1480,7 @@ h4 {
         width: 180px;
         height: 50px;
         line-height: 50px;
+        text-decoration: none;
+        color: #fffed6;
     }
 }
