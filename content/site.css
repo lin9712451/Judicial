@@ -26,6 +26,8 @@ h4 {
     left: 0;
     top: 0;
     z-index: 2;
+    width: 100%;
+    max-width: 100%;
 }
 .main-header::before,
 .main-header::after {
@@ -58,6 +60,7 @@ h4 {
 .titlebar-left {
     float: left;
     width: 19.4%;
+    max-width: 19.4%;
 }
 .titlebar-left > a,
 .titlebar-left > a:link,
@@ -82,6 +85,7 @@ h4 {
 .titlebar-right {
     float: right;
     width: 31.5%;
+    max-width: 31.5%;
 }
 .facebook,
 .instagram,
@@ -89,9 +93,11 @@ h4 {
 .line,
 .google {
     width: 10.8%;
+    max-width: 10.8%;
 }
 .youtube {
     width: 13.9%;
+    max-width: 13.9%;
 }
 .facebook,
 .instagram,
@@ -113,6 +119,7 @@ h4 {
 .logo {
     position: absolute;
     width: 14.6%;
+    max-width: 14.6%;
     left: 11.8%;
 }
 .triangle-down {
@@ -136,22 +143,21 @@ h4 {
     text-decoration: none;
 }
 .menu1 {
-    height: 151px;
-    padding-top: 20px;
     margin-left: 23.1%;
     width: 75%;
+    max-width: 75%;
     border-bottom: 4px solid #4f9588;
 }
 .menu2 {
-    padding-top: 20px;
-    height: 120px;
     margin-left: 23.1%;
     width: 75%;
+    max-width: 75%;
 }
 .menu1 > ul > li,
 .menu2 > ul > li {
     display: inline-block;
     width: 16%;
+    max-width: 16%;
     padding: 2% 0 2% 0.5%;
     text-align: center;
     vertical-align: top;
@@ -196,6 +202,7 @@ h4 {
 .submenu > ul > li {
     float: left;
     width: 25%;
+    max-width: 25%;
     text-align: left;
     padding: 20px 0;
 }
@@ -242,9 +249,6 @@ h4 {
     margin: auto;
     background-color: #ededed;
 }
-.slideshow > img {
-    height: 652px;
-}
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -272,6 +276,7 @@ h4 {
     cursor:pointer;
     height: 10px;
     width: 25px;
+    max-width: 25px;
     background-color: #ededed;
     border-radius: 10%;
     display: inline-block;
@@ -304,6 +309,7 @@ h4 {
 }
 .nationalaffairs-image {
     width: 22.5%;
+    max-width: 22.5%;
     text-align: right;
     float: left;
 }
@@ -315,6 +321,7 @@ h4 {
     float: left;
     color: #4f9588;
     width: 47%;
+    max-width: 47%;
 }
 .nationalaffairs-content > a,
 .nationalaffairs-other > a {
@@ -324,6 +331,7 @@ h4 {
 .nationalaffairs-other {
     float: left;
     width: 30%;
+    max-width: 30%;
     text-align: right;
 }
 .newsandcalendar-container::before,
@@ -338,15 +346,18 @@ h4 {
     background-color: #ffffff;
     float: left;
     width: 43.8%;
+    max-width: 43.8%;
 }
 .calendar {
     width: 29.3%;
+    max-width: 29.3%;
     background-color: #ffffff;
     float: left;
 }
 .news-header,
 .calendar-header {
     color: #4f9588;
+    border-bottom: 2px solid #4f9588;
 }
 .news-detail {
     border-bottom: 2px solid #4f9588;
@@ -360,6 +371,7 @@ h4 {
 }
 .calendar-header-text {
     width: 120px;
+    max-width: 120px;
     float: left;
     height: 40px;
 }
@@ -385,9 +397,11 @@ h4 {
     color: #fffed6;
     border-bottom: 1px solid #c2c2c2;
     width: 14.2%;
+    max-width: 14.2%;
 }
 .calendar-day > li {
     width: 14.2%;
+    max-width: 14.2%;
     background-color: #ffffff;
     color: #4f9588;
     border-bottom: 2px solid #c2c2c2;
@@ -404,6 +418,10 @@ h4 {
 }
 .calendar-content > ul > li {
     color: #4f9588;
+}
+.calendar-content > ul > li > p:last-child {
+    width: 100%;
+    max-width: 100%;
 }
 .calendar-content > ul > .active {
     background-color: #4f9588;
@@ -482,6 +500,7 @@ h4 {
 .activity-title > p {
     margin: 0 auto;
     width: 100px;
+    max-width: 100px;
     text-align: center;
     color: #4f9588;
 }
@@ -509,10 +528,12 @@ h4 {
 .slidevideo-content-first,
 .slidevideo-content-third {
     width: 31%;
+    max-width: 31%;
     float: left; 
 }
 .slidevideo-content-second {
     width: 32%;
+    max-width: 32%;
     float: left;
 }
 .activity-content > div {
@@ -521,12 +542,14 @@ h4 {
 }
 .activity-picture {
     width: 50%;
+    max-width: 50%;
     background-color: #4f9588; 
     float: left;
     overflow: hidden;
 }
 .activity-article {
     width: 50%;
+    max-width: 50%;
     background-color: #fffed6;
     color: #4f9588; 
     float: left;
@@ -589,6 +612,7 @@ h4 {
 .footer-copyright {
     background-image: url('../content/titlebar_image.png');
     background-color: #88bf65;
+    background-size: 100% 100%;
     color: #ffffff;
     text-align: center;
 }
@@ -599,6 +623,7 @@ h4 {
     float: left;
     margin-right: 2%;
     width: 29.4%;
+    max-width: 29.4%;
     padding: 358px 0 0 11.8%;
 }
 .content-menu > ul > li {
@@ -624,6 +649,7 @@ h4 {
 .content-container {
     float: left;
     width: 68.2%;
+    max-width: 68.2%;
     padding: 358px 11.8% 0 0;
     margin-bottom: 50px;
     min-height: 500px;
@@ -634,6 +660,7 @@ h4 {
 .content-breadcrumb {
     float: left;
     width: 60%;
+    max-width: 60%;
     color: #c2c2c2;
     font-size: 0.8em;
 }
@@ -648,6 +675,7 @@ h4 {
 .content-tools {
     float: left;
     width: 40%;
+    max-width: 40%;
     color: #c2c2c2;
     font-size: 0.8em;
 }
@@ -724,6 +752,12 @@ h4 {
 .others-btn > a:hover {
     color: #c2c2c2;
 }
+.word-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display : inline-block;
+    overflow : hidden;
+}
 .col-sm-25 {
     width: 25%;
 }
@@ -779,6 +813,7 @@ h4 {
     .dot {
         height: 10px;
         width: 35px;
+        max-width: 35px;
     }
     .nationalaffairs-container {
         background-size: 27% 146px;
@@ -808,16 +843,16 @@ h4 {
     }
     .news-header-text {
         width: 180px;
+        max-width: 180px;
         height: 50px;
     }
     .calendar-header-text {
         width: 120px;
+        max-width: 120px;
         height: 50px;
     }
     .news-detail {
-        border-bottom: 2px solid #4f9588;
         padding: 40px 10px;
-        color: #4f9588;
         height: 160px;
     }
     .calendar-select {
@@ -849,6 +884,7 @@ h4 {
     .slidevideo-title > p {
         padding: 80px 0 29px 0;
         width: 100px;
+        max-width: 100px;
     }
     .slidevideo-content {
         height: 420px;
@@ -901,6 +937,7 @@ h4 {
     }
     .footer-first {
         width: 25%;
+        max-width: 25%;
         height: 180px;
         line-height: 30px;
         padding: 0 20px 0 11.8%;
@@ -908,6 +945,7 @@ h4 {
     }
     .footer-second {
         width: 17.3%;
+        max-width: 17.3%;
         height: 180px;
         line-height: 30px;
         padding: 0 20px;
@@ -915,6 +953,7 @@ h4 {
     }
     .footer-third {
         width: 21.1%;
+        max-width: 21.1%;
         height: 180px;
         line-height: 30px;
         padding: 0 20px;
@@ -922,6 +961,7 @@ h4 {
     }
     .footer-forth {
         width: 36.6%;
+        max-width: 36.6%;
         height: 180px;
         line-height: 15px;
         padding: 0 11.8% 0 20px;
@@ -934,6 +974,7 @@ h4 {
     .others-btn > a,
     .others-btn > a:link {
         width: 212px;
+        max-width: 212px;
         height: 69px;
         line-height: 69px;
     }
@@ -984,6 +1025,7 @@ h4 {
     .dot {
         height: 7px;
         width: 22px;
+        max-width: 22px;
     }
     .nationalaffairs-container {
         background-size: 27% 98px;
@@ -1013,16 +1055,16 @@ h4 {
     }
     .news-header-text {
         width: 170px;
+        max-width: 170px;
         height: 40px;
     }
     .calendar-header-text {
         width: 110px;
+        max-width: 110px;
         height: 40px;
     }
     .news-detail {
-        border-bottom: 2px solid #4f9588;
         padding: 20px 10px;
-        color: #4f9588;
         height: 107px;
     }
     .calendar-select {
@@ -1055,6 +1097,7 @@ h4 {
     .slidevideo-title > p {
         padding: 44px 0 19px 0;
         width: 90px;
+        max-width: 90px;
     }
     .slidevideo-content {
         height: 281px;
@@ -1078,6 +1121,7 @@ h4 {
     .activity-title > p {
         padding: 52px 0 16px 0;
         width: 90px;
+        max-width: 90px;
     }
     .activity-content {
         padding: 39px 7.4% 10px 7.4%;
@@ -1100,18 +1144,19 @@ h4 {
         right: 33px;
     }
     .activity-moreother > a {
-        margin-top: 28px;
+        margin-top: 39px;
     }
     .footer-link {
         height: 204px;
+        font-size: 0.9em;
     }
     .footer-first > a, .footer-second > a,
     .footer-third > a,.footer-forth > a {
         margin: 5px 0;
-        font-size: 0.9em;
     }
     .footer-first {
         width: 28%;
+        max-width: 28%;
         height: 140px;
         line-height: 25px;
         padding: 0 20px 0 11.8%;
@@ -1119,6 +1164,7 @@ h4 {
     }
     .footer-second {
         width: 18.3%;
+        max-width: 18.3%;
         height: 140px;
         line-height: 25px;
         padding: 0 20px;
@@ -1126,6 +1172,7 @@ h4 {
     }
     .footer-third {
         width: 17.1%;
+        max-width: 17.1%;
         height: 140px;
         line-height: 25px;
         padding: 0 20px;
@@ -1133,6 +1180,7 @@ h4 {
     }
     .footer-forth {
         width: 36.6%;
+        max-width: 36.6%;
         height: 140px;
         line-height: 10px;
         padding: 0 11.8% 0 20px;
@@ -1145,6 +1193,7 @@ h4 {
     .others-btn > a,
     .others-btn > a:link {
         width: 142px;
+        max-width: 142px;
         height: 45px;
         line-height: 45px;
     }
@@ -1157,226 +1206,803 @@ h4 {
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
     .titlebar-container {
-        height: 67px;
-        line-height: 67px;
-        padding: 0;
+        min-height: 46px;
+        height: 46px;
+        line-height: 46px;
+        padding: 0 3% 0 4.4%;
     }
     .navbar {
-        padding: 20px 10px;
-    }
-    .menu1,
-    .menu2 {
-        margin-left: 320px;
-    }
-    .nationalaffairs-container {
-        background-size: 290px 146px;
-    }
-    .news {
-        margin: 100px 42px 138px 35px;
-    }
-    .calendar {
-        margin: 100px 35px 75px 0px;
-    }
-    .slidevideo-main,
-    .activity-main {
-        padding: 0 35px;
-    }
-    .activity-container {
-        height: 1100px;
-    }
-    .activity-content {
-        padding: 20px 57px;
-    }
-    .activity-picture,
-    .activity-article {
-        height: 273px;
-    }
-    .activity-text {
-        padding: 55px 10px 20px;
-    }
-    .footer-link {
-        font-size: 0.9em;
-    }
-    .footer-first {
-        width: 250px;
-        height: 180px;
-        line-height: 30px;
-        padding: 0 20px;
-        margin-top: 70px;
-    }
-    .footer-second {
-        width: 250px;
-        height: 180px;
-        line-height: 30px;
-        padding: 0 20px;
-        margin-top: 70px;
-    }
-    .footer-third {
-        width: 200px;
-        height: 180px;
-        line-height: 30px;
-        padding: 0 20px;
-        margin-top: 70px;
-    }
-    .footer-forth {
-        width: 324px;
-        height: 180px;
-        line-height: 15px;
-        padding: 0 20px;
-        margin-top: 70px;
-    }
-}
-@media (max-width: 768px) {
-    .titlebar-container {
-        height: 67px;
-        line-height: 67px;
-        padding: 0;
-    }
-    .navbar {
-        padding: 10px;
-        height: 110px;
-        min-height: 110px;
+        min-height: 176px;
+        height: 176px;
+        border-bottom: 2px solid #4f9588;
+        padding: 0 3.1%;
     }
     .logo {
-        padding: 0;
-        height: 100px;
-        width: 200px;
+        height: 176px;
+        padding-top: 60px; 
+        left: 3.1%;
+        width: 18.1%;
+        max-width: 18.1%;
     }
-    .menu1,
+    .menu1 {
+        width: 75.5%;
+        max-width: 75.5%;
+        height: 98px;
+        padding-top: 4px;
+        border-bottom: 2px solid #4f9588;
+    }
     .menu2 {
-        display: none;
+        padding-top: 4px;
+        height: 76px;
+    }
+    .slideshow-container {
+        height: 650px;
+        padding: 224px 40px 0 40px;
+    }
+    .slideshow > img {
+        height: 426px;
+    }
+    .prev {
+        left: 0;
+    }
+    .prev, .next {
+        padding: 16px 56px;
+    }
+    .dot-container {
+        bottom: 43px;
+    }
+    .dot {
+        height: 6px;
+        width: 23.5px;
+        max-width: 23.5px;
     }
     .nationalaffairs-container {
-        background-size: 230px 146px;
+        background-size: 22% 95px;
+        height: 95px;
+    }
+    .nationalaffairs-image {
+        width: 17%;
+        max-width: 17%;
+        height: 95px;
+        padding: 15px 0;
+    }
+    .nationalaffairs-image > img {
+        width: 33.8%; 
+        max-width: 33.8%;
+    }
+    .nationalaffairs-content {
+        height: 95px;
+        padding: 24px 0 0 6%;
+    }
+    .nationalaffairs-other {
+        height: 95px;
+        padding: 24px 3% 0 0;
     }
     .news {
-        margin: 100px 35px 50px 35px;
-        width: 698px;
+        width: 53.6%;
+        max-width: 53.6%;
+        margin: 69px 3% 137px 3%;
     }
     .calendar {
-        margin: 50px 35px 75px 35px;
-        width: 698px;
+        width: 35.8%;
+        max-width: 35.8%;
+        margin: 69px 3% 80px 0px;
+    }
+    .news-header,
+    .calendar-header {
+        height: 30px;
+    }
+    .news-header-text {
+        width: 160px;
+        max-width: 160px;
+        height: 30px;
+    }
+    .calendar-header-text {
+        width: 100px;
+        max-width: 100px;
+        height: 30px;
+    }
+    .news-detail {
+        padding: 20px 10px;
+        height: 106px;
+    }
+    .calendar-select {
+        font-size: 1.1em;
+        height: 68px;
+        padding: 17.5px 0;
+    }
+    .calendar-now {
+        margin: 7px;
+    }
+    .calendar-detail {
+        height: 347px;
+    }
+    .calendar-week > li {
+        height: 36px;
+        line-height: 36px;
+    }
+    .calendar-day > li {
+        line-height: 62.2px;
+        height: 62.2px;
+    }
+    .calendar-content > ul > li {
+        height: 62px;
+        padding: 17px 8px 27px 18px;
+        font-size: 0.9em;
+    }
+    .slidevideo-container {
+        height: 429px;
     }
     .slidevideo-main,
     .activity-main {
-        padding: 0 20px;
+        padding: 0 3%;
     }
-    .activity-picture,
+    .slidevideo-title > p {
+        padding: 53px 0 18px 0;
+        width: 90px;
+        max-width: 90px;
+    }
+    .slidevideo-content {
+        height: 270px;
+    }
+    .slidevideo-content > div {
+        margin: 28px 1% 0 1%;
+    }
+    .slidevideo-video {
+        height: 171px;
+    }
+    .slidevideo-text {
+        height: 65px;
+        padding-top: 24px;
+    }
+    .slidevideo-other > a {
+        margin-top: 18px;
+    }
+    .activity-container {
+        height: 1104px;
+    }
+    .activity-title > p {
+        padding: 53px 0 16px 0;
+        width: 90px;
+        max-width: 90px;
+    }
+    .activity-content {
+        padding: 39px 7.4% 10px 7.4%;
+    }
+    .activity-content > div {
+        height: 274px;
+        margin: 9px 0;
+    }
+    .activity-picture {
+        height: 274px;
+    }
     .activity-article {
-        height: 273px;
+        height: 274px;
     }
     .activity-text {
-        padding: 35px 10px 25px;
+        padding: 50px 8px 0 31px;
+    }
+    .activity-others {
+        bottom: 46px;
+        right: 32px;
+    }
+    .activity-moreother > a {
+        margin-top: 18px;
     }
     .footer-link {
-        font-size: 0.7em;
+        height: 200px;
+        font-size: 0.8em;
+    }
+    .footer-first > a, .footer-second > a,
+    .footer-third > a,.footer-forth > a {
+        margin: 5px 0;
     }
     .footer-first {
-        width: 180px;
-        height: 180px;
-        line-height: 30px;
-        padding: 0 10px;
-        margin-top: 70px;
+        width: 24%;
+        max-width: 24%;
+        height: 140px;
+        line-height: 25px;
+        padding: 0 20px 0 3%;
+        margin-top: 30px;
     }
     .footer-second {
-        width: 180px;
-        height: 180px;
-        line-height: 30px;
-        padding: 0 10px;
-        margin-top: 70px;
+        width: 22.3%;
+        max-width: 22.3%;
+        height: 140px;
+        line-height: 25px;
+        padding: 0 20px;
+        margin-top: 30px;
     }
     .footer-third {
-        width: 170px;
-        height: 180px;
-        line-height: 30px;
-        padding: 0 10px;
-        margin-top: 70px;
+        width: 25.7%;
+        max-width: 25.7%;
+        height: 140px;
+        line-height: 25px;
+        padding: 0 20px;
+        margin-top: 30px;
     }
     .footer-forth {
-        width: 238px;
-        height: 180px;
-        line-height: 15px;
-        padding: 0 10px;
-        margin-top: 70px;
+        width: 28%;
+        max-width: 28%;
+        height: 140px;
+        line-height: 10px;
+        padding: 0 3% 0 20px;
+        margin-top: 30px;
+    }
+    .footer-copyright {
+        height: 46px;
+        line-height: 46px;
+    }
+    .others-btn > a,
+    .others-btn > a:link {
+        width: 138px;
+        max-width: 138px;
+        height: 46px;
+        line-height: 46px;
+    }
+    .sub-title {
+        font-size: 1.1em;
+    }
+    .subtitle-borderbottom {
+        border-bottom: 5px solid #4f9588;
     }
 }
-/*@media (max-width: 414px) {*/
-@media (max-width: 736px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .titlebar-container {
-        height: 67px;
-        line-height: 67px;
-        padding: 0;
+        min-height: 46px;
+        height: 46px;
+        line-height: 46px;
+        padding: 0 1% 0 1.5%;
+    }
+    .titlebar-left {
+        width: 25.4%;
+        max-width: 25.4%;
+    }
+    .titlebar-right {
+        width: 39.5%;
+        max-width: 39.5%;
+    }
+    .navbar {
+        min-height: 170px;
+        height: 170px;
+        border-bottom: 2px solid #4f9588;
+        padding: 0 1%;
+    }
+    .logo {
+        height: 170px;
+        padding-top: 70px; 
+        left: 1.5%;
+        width: 15.1%;
+        max-width: 15.1%;
+    }
+    .menu1 {
+        width: 82%;
+        max-width: 82%;
+        height: 95px;
+        padding-top: 4px;
+        margin-left: 18%;
+        border-bottom: 2px solid #4f9588;
+    }
+    .menu2 {
+        width: 82%;
+        max-width: 82%;
+        height: 73px;
+        padding-top: 4px;
+        margin-left: 18%;
+    }
+    .menu1 > ul > li a, .menu1 > ul > li a:link, 
+    .menu2 > ul > li a, .menu2 > ul > li a:link {
+        font-size: 0.85em;
+    }
+    .submenu {
+        padding: 0 1%;
+    }
+    .slideshow-container {
+        height: 542px;
+        padding: 216px 20px 0 20px;
+    }
+    .slideshow > img {
+        height: 326px;
+    }
+    .prev {
+        left: 0;
+    }
+    .prev, .next {
+        padding: 16px 36px;
+    }
+    .dot-container {
+        bottom: 40px;
+    }
+    .dot {
+        height: 6px;
+        width: 23.5px;
+        max-width: 23.5px;
+    }
+    .nationalaffairs-container {
+        background-size: 25% 90px;
+        height: 90px;
+    }
+    .nationalaffairs-image {
+        width: 20%;
+        max-width: 20%;
+        height: 90px;
+        padding: 18px 0;
+    }
+    .nationalaffairs-image > img {
+        width: 33.8%; 
+        max-width: 33.8%;
+    }
+    .nationalaffairs-content {
+        height: 90px;
+        padding: 20px 0 0 8%;
+    }
+    .nationalaffairs-other {
+        height: 90px;
+        padding: 24px 1% 0 0;
+    }
+    .news {
+        width: 55.6%;
+        max-width: 55.6%;
+        margin: 69px 2% 137px 1%;
+    }
+    .calendar {
+        width: 40.4%;
+        max-width: 40.4%;
+        margin: 69px 1% 80px 0px;
+    }
+    .news-header,
+    .calendar-header {
+        height: 32px;
+    }
+    .news-header-text {
+        width: 150px;
+        max-width: 150px;
+        height: 32px;
+    }
+    .calendar-header-text {
+        width: 100px;
+        max-width: 100px;
+        height: 32px;
+    }
+    .news-detail {
+        padding: 20px 10px;
+        height: 120px;
+    }
+    .calendar-select {
+        font-size: 1.1em;
+        height: 68px;
+        padding: 17.5px 0;
+    }
+    .calendar-now {
+        margin: 7px;
+    }
+    .calendar-detail {
+        height: 347px;
+    }
+    .calendar-week > li {
+        height: 36px;
+        line-height: 36px;
+    }
+    .calendar-day > li {
+        line-height: 62.2px;
+        height: 62.2px;
+    }
+    .calendar-content > ul > li {
+        height: 62px;
+        padding: 17px 8px 27px 18px;
+        font-size: 0.9em;
+    }
+    .slidevideo-container {
+        height: 429px;
+    }
+    .slidevideo-main,
+    .activity-main {
+        padding: 0 1%;
+    }
+    .slidevideo-title > p {
+        padding: 53px 0 18px 0;
+        width: 90px;
+        max-width: 90px;
+    }
+    .slidevideo-content {
+        height: 270px;
+    }
+    .slidevideo-content > div {
+        margin: 28px 1% 0 1%;
+    }
+    .slidevideo-video {
+        height: 171px;
+    }
+    .slidevideo-text {
+        height: 65px;
+        padding-top: 24px;
+    }
+    .slidevideo-other > a {
+        margin-top: 18px;
+    }
+    .activity-container {
+        height: 1104px;
+    }
+    .activity-title > p {
+        padding: 53px 0 16px 0;
+        width: 90px;
+        max-width: 90px;
+    }
+    .activity-content {
+        padding: 39px 7.4% 10px 7.4%;
+    }
+    .activity-content > div {
+        height: 274px;
+        margin: 9px 0;
+    }
+    .activity-picture {
+        height: 274px;
+    }
+    .activity-article {
+        height: 274px;
+    }
+    .activity-text {
+        padding: 50px 8px 0 31px;
+    }
+    .activity-others {
+        bottom: 46px;
+        right: 32px;
+    }
+    .activity-moreother > a {
+        margin-top: 18px;
+    }
+    .footer-link {
+        height: 200px;
+        font-size: 0.7em;
+    }
+    .footer-first > a, .footer-second > a,
+    .footer-third > a,.footer-forth > a {
+        margin: 5px 0;
+    }
+    .footer-first {
+        width: 23%;
+        max-width: 23%;
+        height: 140px;
+        line-height: 25px;
+        padding: 0 15px 0 1%;
+        margin-top: 30px;
+    }
+    .footer-second {
+        width: 23.3%;
+        max-width: 23.3%;
+        height: 140px;
+        line-height: 25px;
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+    .footer-third {
+        width: 24.7%;
+        max-width: 24.7%;
+        height: 140px;
+        line-height: 25px;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+    .footer-forth {
+        width: 29%;
+        max-width: 29%;
+        height: 140px;
+        line-height: 10px;
+        padding: 0 1% 0 15px;
+        margin-top: 30px;
+    }
+    .footer-copyright {
+        height: 46px;
+        line-height: 46px;
+    }
+    .others-btn > a,
+    .others-btn > a:link {
+        width: 135px;
+        max-width: 135px;
+        height: 44px;
+        line-height: 44px;
+    }
+    .sub-title {
+        font-size: 1em;
+    }
+    .subtitle-borderbottom {
+        border-bottom: 5px solid #4f9588;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .titlebar {
+        background-image: url('../content/titlebar_image_phone.png');
+        background-color: #88bf65;
+        background-size: 100% 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+    .titlebar-container {
+        min-height: 36px;
+        height: 36px;
+        line-height: 36px;
+        padding: 0 9.4% 0 9.4%;
     }
     .titlebar-left {
         display: none;
+        position: fixed;
+        z-index: 2;
+        
     }
     .titlebar-right {
         float: none;
         text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    .facebook,
+    .instagram,
+    .twitter,
+    .line,
+    .google {
+        width: 9.8%;
+        max-width: 9.8%;
+    }
+    .youtube {
+        width: 12.9%;
+        max-width: 12.9%;
     }
     .navbar {
-        padding: 10px;
-        height: 50px;
-        min-height: 50px;
+        min-height: 53px;
+        height: 53px;
+        border-bottom: 2px solid #4f9588;
+        padding: 0 3.8% 0 4.4%;
     }
     .logo {
-        padding: 0;
-        height: 40px;
-        width: 100px;
-    }
-    .menu1,
-    .menu2 {
-        display: none;
+        height: 53px;
+        padding-top: 10px; 
+        width: 31.9%;
+        max-width: 31.9%;
+        left: 4.4%;
     }
     .menu-bar {
         display: block;
         z-index: 2;
+        padding-top: 10px;
         margin-left: 90%;
     }
-    .nationalaffairs-container {
-        background-color: #fffed6;
-        background-image: none;
-        height: 146px;
+    .menu1,
+    .menu2 {
+        /*display: none;*/
+        position: fixed;
         width: 100%;
         max-width: 100%;
+        border-bottom: 0;
+        z-index: 2;
+        background-color: #4f9588;
+        margin-left: -4.4%;;
+    }
+    .menu1 {
+        
+    }
+    .menu2 {
+        
+    }
+    .menu1 > ul > li,
+    .menu2 > ul > li {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 35px;
+        padding: 2% 12.5% 2% 9.4%;
+        text-align: left;
+        border-bottom: 1px solid #c2c2c2;
+    }
+    .menu1 > ul > li a,
+    .menu2 > ul > li a,
+    .menu1 > ul > li a:link,
+    .menu2 > ul > li a:link {
+        color: #ffffff;
+        font-weight: bold;
+        display: block;
+        text-decoration: none;
+    }
+    .menu1 > ul > li > .active,
+    .menu2 > ul > li > .active {
+        background-color: #ffd400;
+    }
+    .menu1 > ul > li i {
+        
+    }
+    /*.submenu {
+        background-color: #4f9588;
+        color: #ffffff;
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        opacity: 0.9;
+        left: 0;
+        padding: 0 11.8%;
+    }
+    .submenu > ul {
+        width: 100%;
+        max-width: 100%;
+    }
+    .submenu > ul::before,
+    .submenu > ul::after {
+        display: table;
+        content: " ";
+    }
+    .submenu > ul::after {
+        clear: both;
+    }
+    .submenu > ul > li {
+        float: left;
+        width: 25%;
+        max-width: 25%;
+        text-align: left;
+        padding: 20px 0;
+    }
+    .submenu > ul > li > a::before {
+        display: inline-block;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 0 8px 10px;
+        border-color: transparent transparent transparent #ffffff;
+        margin-right: 10px;
+    }
+    .submenu > ul > li > a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+    }
+    .submenu > ul > li > i {
+        display: inline-block;
+    }
+    .submenu > ul > li > ul > li {
+        padding: 5px 0 0 20px;
+    }
+    .submenu > ul > li > ul > li > a,
+    .submenu > ul > li > ul > li > a:link,
+    .submenu > ul > li > a:visited,
+    .submenu > ul > li > ul > li > a:visited {
+        color: #ffffff;
+        font-weight: lighter;
+        text-decoration: none;
+    }
+    .submenu > ul > li > a:focus,
+    .submenu > ul > li > a:hover,
+    .submenu > ul > li > ul > li > a:focus,
+    .submenu > ul > li > ul > li > a:hover {
+        color: #ededed;
+    }*/
+    .slideshow-container {
+        height: 236px;
+        padding-top: 91px;
+    }
+    .slideshow > img {
+        height: 145px;
+    }
+    .prev {
+        left: 0;
+    }
+    .prev, .next {
+        padding: 16px 16px;
+    }
+    .prev > i, .next > i {
+        font-size: 2em;
+    }
+    .dot-container {
+        display: none;
+    }
+    .nationalaffairs-container {
+        background-image: url('../content/NationalAffairs_phone.png');
+        background-size: 100% 42px;
+        position: relative;
     }
     .nationalaffairs-image {
         display: none;
     }
     .nationalaffairs-content {
         float: none;
-        height: 96px;
         width: 100%;
         max-width: 100%;
-        padding: 10px;
+        padding: 36px 6.9% 0 6.9%;
+        height: 117px;
+        min-height: 117px;
+    }
+    .nationalaffairs-content > p {
+        padding-top: 8px;
+        font-size: 1.2em;
     }
     .nationalaffairs-other {
+        position: absolute;
         float: none;
-        height: 50px;
-        width: 100%;
-        max-width: 100%;
-        padding: 0;
-        text-align: center;
+        right: 0;
+        top: 0;
+        width: 40%;
+        max-width: 40%;
+        text-align: right;
+    }
+    .nationalaffairs-other > div > a,
+    .nationalaffairs-other > div > a:link {
+        background-color: inherit;
+        color: #ffffff;
+        width: auto;
+        height: 36px;
+        line-height: 36px;
+        padding-right: 17.2%;
     }
     .newsandcalendar-container {
         width: 100%;
+        max-width: 100%;
         margin: 0 auto;
-        padding: 0 5%;
+        padding: 0 4.7%;
     }
     .news {
-        margin: 52px 0;
         width: 100%;
+        max-width: 100%;
+        margin-top: 53px;
     }
     .calendar {
-        margin: 52px 0;
         width: 100%;
+        max-width: 100%;
+        margin: 57px 0 51px 0;
     }
-    .slidevideo-arrow-prev,
-    .slidevideo-arrow-next,
-    .activity-arrow-prev,
-    .activity-arrow-next {
-        padding: 0;
-        display: block;
+    .news-header,
+    .calendar-header {
+        height: 30px;
+    }
+    .news-header-text {
+        width: 150px;
+        max-width: 150px;
+        height: 30px;
+    }
+    .calendar-header-text {
+        width: 100px;
+        max-width: 100px;
+        height: 30px;
+    }
+    .news-detail {
+        padding: 10px 5px;
+        height: 83px;
+        font-size: 0.8em;
+    }
+    .news-detail > p {
+        margin-bottom: 5px;
+    }
+    .news-others {
+        text-align: center;
+    }
+    .calendar-select {
+        font-size: 1em;
+        height: 53px;
+        padding: 15px 0;
+    }
+    .calendar-now {
+        margin: 5px;
+    }
+    .calendar-detail {
+        height: 276px;
+    }
+    .calendar-week > li {
+        height: 29px;
+        line-height: 29px;
+    }
+    .calendar-day > li {
+        line-height: 49.4px;
+        height: 49.4px;
+    }
+    .calendar-content > ul > li {
+        height: 48px;
+        padding: 10px 8px;
+        font-size: 0.8em;
+    }
+    .calendar-content > ul > li > p {
+        margin-bottom: 5px;
+    }
+    .slidevideo-container {
+        height: 336px;
     }
     .slidevideo-main,
     .activity-main {
@@ -1384,17 +2010,96 @@ h4 {
     }
     .slidevideo-title,
     .activity-title {
-        width: 90%;
+        padding: 0;
+        width: 90.6%;
+        max-width: 90.6%;
+    }
+    .slidevideo-title > p {
+        padding: 40px 0 15px 0;
+        width: 90px;
+        max-width: 90px;
+    }
+    .slidevideo-content {
+        height: 208px;
+    }
+    .slidevideo-content > div {
+        margin-top: 22px;
+    }
+    .slidevideo-video {
+        height: 134px;
+    }
+    .slidevideo-text {
+        height: 52px;
+        padding-top: 15px;
+    }
+    .slidevideo-other > a {
+        margin-top: 11px;
+    }
+    .slidevideo-arrow-prev,
+    .slidevideo-arrow-next,
+    .activity-arrow-prev,
+    .activity-arrow-next {
+        top: 45%;
+        padding: 15px;
+        display: block;
     }
     .slidevideo-content-first,
     .slidevideo-content-third {
-        width: 10%; 
+        width: 8.1%; 
+        max-width: 8.1%;
     }
     .slidevideo-content-second {
-        width: 74%; 
+        width: 83.8%; 
+        max-width: 83.8%;
+        padding: 0 4.1%
+    }
+    .slidevideo-content-first > .slidevideo-text,
+    .slidevideo-content-second > .slidevideo-text,
+    .slidevideo-content-third > .slidevideo-text {
+        width: 100%; 
+        max-width: 100%;
     }
     .activity-container {
-        height: 580px;
+        height: 518px;
+    }
+    .activity-title > p {
+        padding: 41px 0 12px 0;
+        width: 90px;
+        max-width: 90px;
+    }
+    .activity-content {
+        padding-top: 39px;
+        height: 358px;
+    }
+    .activity-content > div {
+        height: 358px;
+        margin: 0;
+    }
+    .activity-content > .active {
+        width: 76.3%;
+        max-width: 76.3%;
+        height: 319px;
+        margin: 0 5%;
+        padding: 0;
+        position: absolute;
+        left: 6.9%;
+        top: 39px;
+    }
+    .activity-content > .non-active {
+        width: 6.9%;
+        height: 319px;
+        margin: 0 auto;
+        position: absolute;
+        top: 39px;
+    }
+    .activity-content > .non-active .activity-others {
+        display: none;
+    }
+    .activity-content > .left {
+        left: 0;
+    }
+    .activity-content > .right {
+        right: 0;
     }
     .activity-picture {
         height: 183px;
@@ -1413,39 +2118,25 @@ h4 {
         top: 183px;
     }
     .activity-text {
-        padding: 10px 5px;
+        padding: 13px 16px;
     }
-    .activity-content {
-        height: 365px;
-    }
-    .activity-content > .active {
-        width: 76%;
-        height: 319px;
-        margin: 0 auto;
-        padding: 0 2%;
-        position: absolute;
-        left: 12%;
-        top: 40px;
-    }
-    .activity-content > .non-active {
-        width: 10%;
-        height: 319px;
-        margin: 0 auto;
-        position: absolute;
-        top: 40px;
-    }
-    .activity-content > .left {
-        left: 0;
-    }
-    .activity-content > .right {
-        right: 0;
+    .activity-text > .word-overflow {
+        width: 100%;
+        max-width: 100%;
     }
     .activity-others {
+        bottom: 13px;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
         text-align: center;
     }
+    .activity-moreother > a {
+        margin-top: 26px;
+    }
     .footer-link {
-        font-size: 0.9em;
-        height: 480px;
+        font-size: 0.8em;
+        height: 432px;
     }
     .footer-first,
     .footer-second,
@@ -1456,31 +2147,97 @@ h4 {
         width: 100%;
         max-width: 100%;
         margin: 0;
-        line-height: 15px;
+        line-height: 12 px;
     }
     .footer-first {
-        padding: 20px 10px 0 10px;
-        height: 120px;
+        padding: 28px 0 0 11.9%;
     }
-    .footer-second {
-        padding: 0 10px;
-        height: 90px;
-    }
+    .footer-second,
     .footer-third {
-        padding: 0 10px;
-        height: 100px;
+        padding-left: 11.9%;
     }
     .footer-forth {
-        padding: 20px 10px 0 10px;
+        padding: 15px 0 0 11.9%;
         line-height: 5px;
     }
+    .footer-copyright {
+        background-image: url('../content/titlebar_image_phone.png');
+        height: 36px;
+        line-height: 36px;
+        font-size: 0.7em;
+    }
 
-
-    .others-btn > a {
-        width: 180px;
-        height: 50px;
-        line-height: 50px;
-        text-decoration: none;
-        color: #fffed6;
+    .others-btn > a,
+    .others-btn > a:link {
+        width: 110px;
+        max-width: 110px;
+        height: 36px;
+        line-height: 36px;
+    }
+    .sub-title {
+        font-size: 1em;
+    }
+    .subtitle-borderbottom {
+        border-bottom: 4px solid #4f9588;
+    }
+}
+@media (min-width: 376px) and (max-width: 480px) {
+    .logo {
+        height: 53px;
+        min-height: 53px;
+        padding-top: 10px; 
+        width: 23.9%;
+        max-width: 23.9%;
+        left: 4.4%;
+    }
+    .facebook,
+    .instagram,
+    .twitter,
+    .line,
+    .google {
+        width: 8.8%;
+        max-width: 8.8%;
+    }
+    .youtube {
+        width: 11.9%;
+        max-width: 11.9%;
+    }
+    .nationalaffairs-container {
+        background-size: 100% 48px;
+    }
+    .nationalaffairs-content {
+        padding: 42px 6.9% 0 6.9%;
+        height: 123px;
+        min-height: 123px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .logo {
+        height: 53px;
+        min-height: 53px;
+        padding-top: 10px; 
+        width: 18.9%;
+        max-width: 18.9%;
+        left: 4.4%;
+    }
+    .facebook,
+    .instagram,
+    .twitter,
+    .line,
+    .google {
+        width: 5.8%;
+        max-width: 5.8%;
+    }
+    .youtube {
+        width: 8.9%;
+        max-width: 8.9%;
+    }
+    .nationalaffairs-container {
+        background-size: 100% 48px;
+    }
+    .nationalaffairs-content {
+        padding: 42px 6.9% 0 6.9%;
+        height: 123px;
+        min-height: 123px;
     }
 }
