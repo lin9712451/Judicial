@@ -1,16 +1,24 @@
 
 (function menu (){
     var menu1, menu2;
+    var content_menu, content_title_container;
     menu1 = document.getElementsByClassName("menu1")[0];
     menu2 = document.getElementsByClassName("menu2")[0];
+    // content_menu = document.getElementsByClassName("content-menu");
+    // content_title_container = 
+    //     document.getElementsByClassName("content-title-container");
     //
-    if (document.addEventListener ){
+    if (document.addEventListener){
         menu1.addEventListener("click", MenuToggle, false);
         menu2.addEventListener("click", MenuToggle, false);
+        // if (content_menu !== undefined) {
+        //     window.addEventListener("scroll", StickSubMenuAndSubTitle, false);
+        // }
     } else if (document.attachEvent) {
-        menu1.attachEvent("onclick", MenuToggle)
+        menu1.attachEvent("onclick", MenuToggle);
+        // window.attachEvent("onscroll", StickSubMenuAndSubTitle);
     }
-    
+    //
     function MenuToggle(event) {
         var target = event.target || event.srcElement;
         var subMenuNumber = target.getAttribute("data-menu");
@@ -68,5 +76,9 @@
             }
         }
     }
+
+    // function StickSubMenuAndSubTitle() {
+
+    // }
 })();
 
