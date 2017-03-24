@@ -42,7 +42,7 @@
             <nav role="navigation" class="navbar">
                 <div class="logo">
                     <a href="#">
-                        <img src="content/logo.png" alt="Logo">
+                        <img src="content/images/logo.png" alt="Logo">
                     </a>
                 </div>
                 <div class="menu-bar hidden">
@@ -281,25 +281,27 @@
                 <div class="content">
                     <div class="input-area">
                         <form class="form-horizontal">
-                            <div class="col-12 form-group">
-                                <label for="txtBeginDate" class="control-label push-left">公告日</label>
-                                <div class="col-3 push-left">
-                                    <input type="text" name="BeginDate" id="txtBeginDate" value="" placeholder="請輸入日期" class="form-control">
+                            <div class="col-xs-12 form-group">
+                                <label for="txtBeginDate" class="control-label push-left col-xs-12 col-md-auto">公告日</label>
+                                <div class="col-xs-12 col-md-3 push-left">
+                                    <input type="date" name="BeginDate" id="txtBeginDate" value="" placeholder="請輸入日期" class="form-control">
                                 </div>
                                 <label class="control-label push-left">(起)</label>
-                                <div class="col-3 push-left">
-                                    <input type="text" name="EndDate" id="txtEndDate" value="" placeholder="請輸入日期" class="form-control">
+                                <div class="col-xs-12 col-md-3 push-left">
+                                    <input type="date" name="EndDate" id="txtEndDate" value="" placeholder="請輸入日期" class="form-control">
                                 </div>
                                 <label class="control-label push-left">(迄)</label>
-                                <label class="control-label info-color push-left info-text">日期格式：2017-01-01</label>
+                                <label class="control-label info-color push-left info-text col-xs-10 col-md-auto">日期格式：2017-01-01</label>
                             </div>
-                            <div class="col-12 form-group">
+                            <div class="col-xs-12 form-group">
                                 <label for="txtKeyWord" class="control-label push-left">關鍵字</label>
-                                <div class="col-8 push-left">
+                                <div class="col-xs-9 col-md-8 push-left">
                                     <input type="text" name="KeyWord" id="txtKeyWord" value="" placeholder="請輸入文字" class="form-control">
                                 </div>
-                                <input type="submit" name="Query" id="btnQueryCommand" value="查詢" class="btn-primary">
-                                <input type="button" name="Clear" id="btnClearCommand" value="重設" class="btn-primary">
+                                <div class="col-xs-12 col-md-auto push-left action-group">
+                                    <input type="submit" name="Query" id="btnQueryCommand" value="查詢" class="btn-primary">
+                                    <input type="button" name="Clear" id="btnClearCommand" value="重設" class="btn-primary">
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -318,172 +320,172 @@
                         <table class="table-primary">
                             <thead>
                                 <tr>
-                                    <th class="col-2">公告日</th>
-                                    <th class="col-2">類別</th>
+                                    <th class="col-xs-2">公告日</th>
+                                    <th class="col-xs-2">類別</th>
                                     <th>摘要</th>
-                                    <th class="col-3">發布單位</th>
+                                    <th class="col-xs-3">發布單位</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                                 <tr>
-                                    <td class="text-center">104.08.20</td>
-                                    <td class="text-center">新聞稿</td>
-                                    <td>
+                                    <td data-th="公告日" class="text-center">104.08.20</td>
+                                    <td data-th="類別" class="text-center">新聞稿</td>
+                                    <td data-th="摘要">
                                         臺灣基隆地方法院104年8月24日、25日觀審模擬法庭研討會系列活動
                                     </td>
-                                    <td class="text-center">臺灣基隆地方法院</td>
+                                    <td data-th="發布單位" class="text-center">臺灣基隆地方法院</td>
                                 </tr>
                             </tbody>
                         </table>

@@ -55,7 +55,7 @@ h4 {
 .titlebar {
     border: 1px solid transparent;
     color: #ffffff;
-    background-image: url('../content/titlebar_image.png');
+    background-image: url('../content/images/titlebar_image.png');
     background-color: #88bf65;
     background-size: 100% 100%;
     width: 100%;
@@ -317,7 +317,7 @@ h4 {
 }
 .nationalaffairs-container {
     background-color: #fffed6;
-    background-image: url('../content/NationalAffairs.png');
+    background-image: url('../content/images/NationalAffairs.png');
     background-repeat: no-repeat;
     width: 100%;
     max-width: 100%;
@@ -625,7 +625,7 @@ h4 {
     float: left;
 }
 .footer-copyright {
-    background-image: url('../content/titlebar_image.png');
+    background-image: url('../content/images/titlebar_image.png');
     background-color: #88bf65;
     background-size: 100% 100%;
     color: #ffffff;
@@ -851,6 +851,9 @@ h4 {
     word-break: break-all;
     -ms-word-break: break-all;
 }
+.indent-p {
+    text-indent: 18px;
+}
 .content ul {
     padding-bottom: 10px;
 }
@@ -894,8 +897,10 @@ h4 {
 .table-striped-detail > tbody > tr > td {
     padding: 15px;
 }
-.table-primary > thead > tr > th {
+.table-primary > thead > tr {
     background-color: #4f9588;
+}
+.table-primary > thead > tr > th {
     color: #eaf9dc;
     padding: 5px 10px;
     border-right: 1px solid #eaf9dc;
@@ -927,6 +932,9 @@ h4 {
     background-color: #ffffff;
     margin: 10px 0;
 }
+.table-page-container > span {
+    padding: 0 5px;
+}
 .pages {
     display: inline-block;
     width: 50%;
@@ -940,9 +948,6 @@ h4 {
     text-align: right;
     padding: 15px;
     margin: 0 -1%;
-}
-.page-change > span {
-    padding: 0 5px;
 }
 .page-numbers {
     width: 100%;
@@ -1098,57 +1103,49 @@ h4 {
 .AnchorPoint:target {
     margin-top: -50px;
 }
-.col-1,
-.col-2,
-.col-3,
-.col-4,
-.col-5,
-.col-6,
-.col-7,
-.col-8,
-.col-9,
-.col-10,
-.col-11,
-.col-12 {
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6,
+.col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
     padding-right: 3px;
     padding-left: 3px;
     position: relative;
     min-height: 1px;
 }
-.col-12 {
+.col-xs-12 {
     width: 100%;
 }
-.col-11 {
+.col-xs-11 {
     width: 91.66666666666666%;
 }
-.col-10 {
+.col-xs-10 {
     width: 83.33333333333334%;
 }
-.col-9 {
+.col-xs-9 {
     width: 75%;
 }
-.col-8 {
+.col-xs-8 {
     width: 66.66666666666666%;
 }
-.col-7 {
+.col-xs-7 {
     width: 58.333333333333336%;
 }
-.col-6 {
+.col-xs-6 {
     width: 50%;
 }
-.col-5 {
+.col-xs-5 {
     width: 41.66666666666667%;
 }
-.col-4 {
+.col-xs-4 {
     width: 33.33333333333333%;
 }
-.col-3 {
+.col-xs-3 {
     width: 25%;
 }
-.col-2 {
+.col-xs-2 {
     width: 16.666666666666664%;
 }
-.col-1 {
+.col-xs-1 {
     width: 8.333333333333332%;
 }
 .row-30 {
@@ -2078,6 +2075,9 @@ h4 {
     .subtitle-borderbottom {
         border-bottom: 5px solid #4f9588;
     }
+    .AnchorPoint:target {
+        margin-top: -280px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
     .titlebar-container {
@@ -2359,10 +2359,32 @@ h4 {
     .subtitle-borderbottom {
         border-bottom: 5px solid #4f9588;
     }
+    .AnchorPoint:target {
+        margin-top: -250px;
+    }
 }
 @media (min-width: 320px) and (max-width: 767px) {
+    h1 {
+        font-size: 1.7em;
+        padding: 3px 0;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        padding: 8px 0;
+    }
+
+    h3 {
+        font-size: 1.3em;
+        padding: 10px 0;
+    }
+
+    h4 {
+        font-size: 1.1em;
+        padding: 13px 0;
+    }
     .titlebar {
-        background-image: url('../content/titlebar_image_phone.png');
+        background-image: url('../content/images/titlebar_image_phone.png');
         background-color: #88bf65;
         background-size: 100% 100%;
         width: 100%;
@@ -2588,7 +2610,7 @@ h4 {
         display: none;
     }
     .nationalaffairs-container {
-        background-image: url('../content/NationalAffairs_phone.png');
+        background-image: url('../content/images/NationalAffairs_phone.png');
         background-size: 100% 42px;
         position: relative;
     }
@@ -2853,7 +2875,7 @@ h4 {
         line-height: 5px;
     }
     .footer-copyright {
-        background-image: url('../content/titlebar_image_phone.png');
+        background-image: url('../content/images/titlebar_image_phone.png');
         height: 36px;
         line-height: 36px;
         font-size: 0.7em;
@@ -2864,10 +2886,80 @@ h4 {
         width: 45px;
         height: 45px;
     }
-    .content-menu,
+    .content-menu {
+        display: none;
+        margin: 0;
+        padding-top: 0;
+        width: 0;
+        max-width: 0;
+    }
     .content-container {
-        margin-top: 236px;
-        padding-top: 20px;
+        margin: 91px 1% 50px 1%;
+        padding-top: 5px;
+        width: 98%;
+        max-width: 98%;
+    }
+    .content-breadcrumb {
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.9em;
+    }
+    .content-breadcrumb > a,
+    .content-breadcrumb > a:link,
+    .content-breadcrumb > a:visited {
+        font-size: 0.9em;
+    }
+    .content-tools {
+        display: none;
+        float: none;
+    }
+    .functionname {
+        width: 100%;
+        max-width: 100%;
+    }
+    .content-paragraph {
+        text-align: left;
+        width: 100%;
+        max-width: 100%;
+    }
+    .table-striped > thead,
+    .table-primary > thead {
+        display: none;
+    }
+    .table-striped > tbody > tr > td,
+    .table-primary > tbody > tr > td {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+    .table-striped > tbody > tr > td::before,
+    .table-primary > tbody > tr > td::before {
+        content: attr(data-th) "：";
+        float: left;
+    }
+    .table-striped > tbody > tr > td,
+    .table-striped > thead > tr > th  {
+        border-right: 0;
+    }
+    .table-striped > tbody > tr > td:last-child {
+        border-bottom: 2px solid #c2c2c2; 
+    }
+    .table-striped > tbody > tr > td,
+    .table-primary > tbody > tr > td {
+        padding: 10px;
+        height: auto;
+    }
+    .table-page-container {
+        height: auto;
+    }
+    .pages {
+        display: block;
+        width: 100%;
+    }
+    .page-change {
+        display: block;
+        width: 100%;
+        text-align: left;
     }
     .others-btn > a,
     .others-btn > a:link {
@@ -2881,6 +2973,12 @@ h4 {
     }
     .subtitle-borderbottom {
         border-bottom: 4px solid #4f9588;
+    }
+    .AnchorPoint:target {
+        margin-top: -135px;
+    }
+    .action-group {
+        margin: 20px;
     }
 }
 @media (min-width: 376px) and (max-width: 480px) {
@@ -2941,6 +3039,47 @@ h4 {
         padding: 42px 6.9% 0 6.9%;
         height: 123px;
         min-height: 123px;
+    }
+}
+@media (min-width: 768px) {
+    .col-md-12 {
+        width: 100%;
+    }
+    .col-md-11 {
+        width: 91.66666666666666%;
+    }
+    .col-md-10 {
+        width: 83.33333333333334%;
+    }
+    .col-md-9 {
+        width: 75%;
+    }
+    .col-md-8 {
+        width: 66.66666666666666%;
+    }
+    .col-md-7 {
+        width: 58.333333333333336%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-5 {
+        width: 41.66666666666667%;
+    }
+    .col-md-4 {
+        width: 33.33333333333333%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-2 {
+        width: 16.666666666666664%;
+    }
+    .col-md-1 {
+        width: 8.333333333333332%;
+    }
+    .col-md-auto {
+        width: auto;
     }
 }
 @media (max-height: 800px) {
