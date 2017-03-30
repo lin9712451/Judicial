@@ -912,6 +912,37 @@ h4 {
 .content ul {
     padding-bottom: 10px;
 }
+.question > ul {
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+}
+.question > ul >li > a {
+    display: block;
+    line-height: 30px;
+    width: 90%;
+    text-decoration: none;
+    color: #000;
+}
+.question > ul > li > a > h4 {
+    margin-left: 3em;
+    text-indent: -3em;
+}
+.question > ul > li > a > p,
+.question > ul > li > a > table {
+    display: none;
+    padding-top: 10px;
+}
+.question > ul > li > a > p {
+    text-indent: 2em;
+}
+.question > ul > li > a:focus > p,
+.question > ul > li > a:focus > table {
+    display: block;
+}
+.question > ul > li > a:focus > h4 {
+    color: #F00;
+}
 .table-striped,
 .table-striped-detail,
 .table-primary {
@@ -1158,8 +1189,6 @@ h4 {
 .AnchorPoint:target {
     margin-top: -50px;
 }
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
-.col-7, .col-8, .col-9, .col-10, .col-11, .col-12,
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6,
 .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
     padding-right: 3px;
