@@ -1,4 +1,3 @@
-
 (function menu (){
     var menu1, menu2, menuBar, menuClose;
     var content_menu, content_title_container;
@@ -16,9 +15,9 @@
         } , false);
     } else if (document.attachEvent) {
         menu1.attachEvent("onclick", MenuToggle);
-        menu2.attachEvent("click", MenuToggle);
-        menuBar.attachEvent("click", OpenAndCloseMenu);
-        menuClose.addEventListener("click", function(){
+        menu2.attachEvent("onclick", MenuToggle);
+        menuBar.attachEvent("onclick", OpenAndCloseMenu);
+        menuClose.addEventListener("onclick", function(){
             OpenAndCloseMenu("close");
         });
     }
@@ -96,11 +95,41 @@
             if (window.getComputedStyle(titlebarLeft).display === "none") {
                 titlebarLeft.style.display = "block";
                 menuCollection.style.display = "block";
+                menuCollection.style.height = GetmenuCollectionHeight();
             } else {
                 titlebarLeft.style.display = "none";
                 menuCollection.style.display = "none";
+                menuCollection.style.height = "0";
             }
         }
+    }
+
+    function GetmenuCollectionHeight() {
+        var clientHeight = document.documentElement.clientHeight;
+        var height;
+        //
+        switch (true) {
+            case (clientHeight <= 320):
+                height = "150px";
+                break;
+            case (clientHeight > 320 && clientHeight <= 375):
+                height = "170px";
+                break;
+            case (clientHeight > 375 && clientHeight <= 480):
+                height = "280px";
+                break;
+            case (clientHeight > 481 && clientHeight <= 667):
+                height = "380px";
+                break;
+            case (clientHeight > 667 && clientHeight <= 800):
+                height = "580px";
+                break;
+            default:
+            height = "280px";
+                break;
+        }
+        //
+        return height;
     }
 })();
 

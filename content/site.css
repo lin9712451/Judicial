@@ -152,6 +152,9 @@ h4 {
     border-color: transparent transparent #c2c2c2 transparent;
     margin: 10px auto 0 auto;
 }
+.menu-collection {
+    display: block;
+}
 .menu-bar > a {
     color: #000000;
     text-decoration: none;
@@ -198,6 +201,7 @@ h4 {
     width: 100%;
     max-width: 100%;
     text-align: center;
+    filter: alpha(opacity=0.9);
     opacity: 0.9;
     left: 0;
     padding: 0 11.8%;
@@ -263,6 +267,35 @@ h4 {
     position: relative;
     margin: auto;
     background-color: #ededed;
+}
+.slideshow {
+    position: relative;
+}
+.slideshow > a {
+    position: absolute; 
+    display: inline-block; 
+    width: 10%; 
+    height: 25%;
+}
+.slideshow > .jury1 {
+    left: 16%; 
+    top: 12%; 
+}
+.slideshow > .jury2 {
+    left: 36%; 
+    top: 10%; 
+}
+.slideshow > .trial1 {
+    left: 54%; 
+    top: 27%; 
+}
+.slideshow > .trial2 {
+    left: 61%; 
+    top: 6%; 
+}
+.slideshow > .mixing {
+    left: 75%; 
+    top: 12%; 
 }
 .prev, .next {
     cursor: pointer;
@@ -375,10 +408,13 @@ h4 {
     border-bottom: 2px solid #4f9588;
 }
 .news-detail {
-    border-bottom: 2px solid #4f9588;
     color: #4f9588;
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid #4f9588;
 }
-.news-content > ul > li > .active {
+.news-detail:focus,
+.news-detail:hover {
     background-color: #fffed6;
 }
 .news-others {
@@ -421,6 +457,12 @@ h4 {
     color: #4f9588;
     border-bottom: 2px solid #c2c2c2;
 }
+.calendar-day > li > a,
+.calendar-day > li > a:link,
+.calendar-day > li > a:visited {
+    color: #4f9588;
+    text-decoration: none
+}
 .calendar-day > .day-first,
 .calendar-day > .day-last {
     background-color: #ededed;
@@ -431,14 +473,24 @@ h4 {
 .calendar-day > .active {
     border-bottom: 4px solid #ffd400;
 }
-.calendar-content > ul > li {
+.calendar-content > ul > li,
+.calendar-content > ul > li > a,
+.calendar-content > ul > li > a:link,
+.calendar-content > ul > li > a:visited {
     color: #4f9588;
+}
+.calendar-content > ul > li > a {
+    display: block;
+    text-decoration: none;
 }
 .calendar-content > ul > li > p:last-child {
     width: 100%;
     max-width: 100%;
 }
-.calendar-content > ul > .active {
+.calendar-content > ul > .active,
+.calendar-content > ul > .active > a,
+.calendar-content > ul > .active > a:link,
+.calendar-content > ul > .active > a:visited {
     background-color: #4f9588;
     color: #fffed6;
 }
@@ -539,6 +591,8 @@ h4 {
     background-color: #fffed6; 
     color: #4f9588;
     overflow: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 .slidevideo-content-first,
 .slidevideo-content-third {
@@ -3087,30 +3141,5 @@ h4 {
     }
     .col-md-auto {
         width: auto;
-    }
-}
-@media (max-height: 800px) {
-    .menu-collection {
-        height: 580px;
-    }
-}
-@media (max-height: 667px) {
-    .menu-collection {
-        height: 380px;
-    }
-}
-@media (max-height: 480px) {
-    .menu-collection {
-        height: 280px;
-    }
-}
-@media (max-height: 375px) {
-    .menu-collection {
-        height: 170px;
-    }
-}
-@media (max-height: 320px) {
-    .menu-collection {
-        height: 150px;
     }
 }
