@@ -258,16 +258,13 @@ h4 {
 .submenu > li > ul > li > a:hover {
     color: #ededed;
 }
-/*.submenu > li:nth-child(4n) {
-    clear: both;
-}*/
-.submenu > li:nth-child(4n)::before,
+.submenu > li:nth-child(4n) {
+    clear: right;
+}
 .submenu > li:nth-child(4n)::after {
     display: table;
     content: " ";
-}
-.submenu > li:nth-child(4n)::after {
-    clear: both;
+    clear: right;
 }
 .submenu-2 > li {
     min-height: 121.5px;
@@ -483,6 +480,9 @@ h4 {
 }
 .calendar-day > .active {
     border-bottom: 4px solid #ffd400;
+}
+.calendar-content {
+    float: left;
 }
 .calendar-content > ul > li,
 .calendar-content > ul > li > a,
@@ -1535,9 +1535,6 @@ h4 {
     .calendar-now {
         margin: 10px;
     }
-    .calendar-detail {
-        height: 585px;
-    }
     .calendar-week > li {
         height: 55px;
         line-height: 55px;
@@ -1763,9 +1760,6 @@ h4 {
     }
     .calendar-now {
         margin: 7px;
-    }
-    .calendar-detail {
-        height: 354px;
     }
     .calendar-week > li {
         height: 37px;
@@ -2019,9 +2013,6 @@ h4 {
     }
     .calendar-now {
         margin: 7px;
-    }
-    .calendar-detail {
-        height: 347px;
     }
     .calendar-week > li {
         height: 36px;
@@ -2303,9 +2294,6 @@ h4 {
     }
     .calendar-now {
         margin: 7px;
-    }
-    .calendar-detail {
-        height: 347px;
     }
     .calendar-week > li {
         height: 36px;
@@ -2790,9 +2778,6 @@ h4 {
     }
     .calendar-now {
         margin: 5px;
-    }
-    .calendar-detail {
-        height: 276px;
     }
     .calendar-week > li {
         height: 29px;
