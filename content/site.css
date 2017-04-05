@@ -258,13 +258,12 @@ h4 {
 .submenu > li > ul > li > a:hover {
     color: #ededed;
 }
-.submenu > li:nth-child(4n) {
-    clear: right;
-}
-.submenu > li:nth-child(4n)::after {
-    display: table;
-    content: " ";
-    clear: right;
+.submenu > li:nth-child(5),
+.submenu > li:nth-child(9),
+.submenu > li:nth-child(13),
+.submenu > li:nth-child(17),
+.submenu > li:nth-child(21) {
+    clear: left;
 }
 .submenu-2 > li {
     min-height: 121.5px;
