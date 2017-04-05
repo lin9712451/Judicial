@@ -111,11 +111,15 @@
         var slides = document.getElementsByClassName("slidevideo");
         if (n > slides.length) {slideIndex = 1;}
         if (n < 1) {slideIndex = slides.length;}
-        if (n < 4) {return true;}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        if (n <= 4) {return true;}
+        if (slides.length > 0) {
+            if (slides[0] !== undefined) {
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex-1].style.display = "block";
+            }
         }
-        slides[slideIndex-1].style.display = "block";
     }
 })();
 //活動花絮輪播
@@ -169,10 +173,14 @@
         var slides = document.getElementsByClassName("activity");
         if (n > slides.length) {slideIndex = 1;}
         if (n < 1) {slideIndex = slides.length;}
-        if (n < 4) {return true;}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        if (n <= 4) {return true;}
+        if (slides.length > 0) {
+            if (slides[0] !== undefined) {
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex-1].style.display = "block";
+            }
         }
-        slides[slideIndex-1].style.display = "block";
     }
 })();
