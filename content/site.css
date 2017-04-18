@@ -70,27 +70,27 @@ h4 {
     clear: both;
 }
 .titlebar-container {
-    padding: 0 13.3% 0 12.8%;
+    padding: 0 13.3% 0 9.8%;
 }
 .titlebar-left {
     float: left;
-    width: 25.4%;
-    max-width: 25.4%;
+    width: 35.4%;
+    max-width: 35.4%;
+}
+.titlebar-left > span {
+    display: inline;
 }
 .titlebar-left > a,
 .titlebar-left > a:link,
 .titlebar-left > a:visited {
     color: #ffffff;
     text-decoration: none;
-    padding: 0 6%;
-}
-.titlebar-left > a:last-child {
-    display: none;
+    padding: 0 3%;
 }
 .titlebar-right > a,
 .titlebar-right > a:link,
 .titlebar-right > a:visited {
-    padding: 0 2%;
+    padding: 0;
     text-decoration: none;
     color: #fffed6;
 }
@@ -102,8 +102,50 @@ h4 {
 }
 .titlebar-right {
     float: right;
-    width: 31.5%;
-    max-width: 31.5%;
+    width: 51.5%;
+    max-width: 51.5%;
+    text-align: right;
+}
+.search-container {
+    display: inline-block;
+    width: 200px;
+    height: 46px;
+    margin-right: 2%;
+}
+.search-container > a,
+.search-container > a:link,
+.search-container > a:visited {
+    display: none;
+    padding: 0;
+    text-decoration: none;
+    color: #fffed6;
+}
+.search-container > a:focus,
+.search-container > a:hover {
+    color: #c2c2c2;
+}
+.search-box {
+    display: inline-block;
+    width: 82%;
+    height: 70%;
+    line-height: 20px;
+    border-radius: 4px 0 0 4px;
+    border: 0;
+    font-size: 16px;
+    padding: 0 0 0 7px;
+    margin: 0;
+}
+.search-button {
+    background-color: #fff;
+    height: 70%;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 7px;
+    width: 18%;
+    border: 0;
+    color: #4f9588; 
+    line-height: 22px;
 }
 .facebook,
 .instagram,
@@ -670,7 +712,8 @@ h4 {
 .footer-first > a,
 .footer-second > a,
 .footer-third > a,
-.footer-forth > a {
+.footer-forth > a,
+.footer-fifth > a {
     color: #4f9588;
     display: block;
     margin: 10px 0;
@@ -686,7 +729,9 @@ h4 {
 .footer-first a:hover {
     color: #c2c2c2;
 }
-.footer-first {
+.footer-first,
+.footer-forth,
+.footer-fifth {
     float: left;
 }
 .footer-second,
@@ -694,8 +739,17 @@ h4 {
     float: left;
     border-left: 2px solid #4f9588;
 }
-.footer-forth {
-    float: left;
+.footer-logo {
+    width: 100%;
+}
+.footer-barrierfree {
+    display: inline-block;
+    width: 76%;
+}
+.footer-gov {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
 }
 .footer-copyright {
     background-image: url('../content/images/titlebar_image.png');
@@ -1718,28 +1772,47 @@ h4 {
         margin-top: 70px;
     }
     .footer-second {
-        width: 17.3%;
-        max-width: 17.3%;
+        width: 13.3%;
+        max-width: 13.3%;
         height: 180px;
         line-height: 30px;
         padding: 0 20px;
         margin-top: 70px;
     }
     .footer-third {
-        width: 21.1%;
-        max-width: 21.1%;
+        width: 10.1%;
+        max-width: 10.1%;
         height: 180px;
         line-height: 30px;
         padding: 0 20px;
         margin-top: 70px;
     }
     .footer-forth {
+        width: 15%;
+        max-width: 15%;
+        height: 180px;
+        line-height: 30px;
+        padding: 0 20px;
+        margin-top: 70px;
+    }
+    .footer-fifth {
         width: 36.6%;
         max-width: 36.6%;
         height: 180px;
         line-height: 15px;
         padding: 0 11.8% 0 20px;
         margin-top: 70px;
+    }
+    .footer-logo > img {
+        height: 65px;
+    }
+    .footer-barrierfree,
+    .footer-gov {
+        margin-top: 10px;
+    }
+    .footer-barrierfree > img,
+    .footer-gov > img {
+        height: 70px;
     }
     .footer-copyright {
         height: 67px;
@@ -1942,7 +2015,7 @@ h4 {
         font-size: 0.9em;
     }
     .footer-first > a, .footer-second > a,
-    .footer-third > a,.footer-forth > a {
+    .footer-third > a,.footer-fifth > a {
         margin: 5px 0;
     }
     .footer-first {
@@ -1950,32 +2023,51 @@ h4 {
         max-width: 28%;
         height: 140px;
         line-height: 25px;
-        padding: 0 20px 0 11.8%;
+        padding: 0 15px 0 11.8%;
         margin-top: 30px;
     }
     .footer-second {
-        width: 18.3%;
-        max-width: 18.3%;
+        width: 16.3%;
+        max-width: 16.3%;
         height: 140px;
         line-height: 25px;
-        padding: 0 20px;
+        padding: 0 15px;
         margin-top: 30px;
     }
     .footer-third {
-        width: 17.1%;
-        max-width: 17.1%;
+        width: 10.1%;
+        max-width: 10.1%;
         height: 140px;
         line-height: 25px;
-        padding: 0 20px;
+        padding: 0 15px;
         margin-top: 30px;
     }
     .footer-forth {
-        width: 36.6%;
-        max-width: 36.6%;
+        width: 12%;
+        max-width: 12%;
+        height: 140px;
+        line-height: 25px;
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+    .footer-fifth {
+        width: 33.6%;
+        max-width: 33.6%;
         height: 140px;
         line-height: 10px;
-        padding: 0 11.8% 0 20px;
+        padding: 0 11.8% 0 15px;
         margin-top: 30px;
+    }
+    .footer-logo > img {
+        height: 55px;
+    }
+    .footer-barrierfree,
+    .footer-gov {
+        margin-top: 10px;
+    }
+    .footer-barrierfree > img,
+    .footer-gov > img {
+        height: 40px;
     }
     .footer-copyright {
         height: 46px;
@@ -2202,40 +2294,59 @@ h4 {
         font-size: 0.8em;
     }
     .footer-first > a, .footer-second > a,
-    .footer-third > a,.footer-forth > a {
+    .footer-third > a,.footer-fifth > a {
         margin: 5px 0;
     }
     .footer-first {
-        width: 24%;
-        max-width: 24%;
+        width: 23%;
+        max-width: 23%;
         height: 140px;
         line-height: 25px;
-        padding: 0 20px 0 3%;
+        padding: 0 15px 0 3%;
         margin-top: 30px;
     }
     .footer-second {
-        width: 22.3%;
-        max-width: 22.3%;
+        width: 21.3%;
+        max-width: 21.3%;
         height: 140px;
         line-height: 25px;
-        padding: 0 20px;
+        padding: 0 15px;
         margin-top: 30px;
     }
     .footer-third {
-        width: 25.7%;
-        max-width: 25.7%;
+        width: 11.7%;
+        max-width: 11.7%;
         height: 140px;
         line-height: 25px;
-        padding: 0 20px;
+        padding: 0 15px;
         margin-top: 30px;
     }
     .footer-forth {
+        width: 16%;
+        max-width: 16%;
+        height: 140px;
+        line-height: 25px;
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+    .footer-fifth {
         width: 28%;
         max-width: 28%;
         height: 140px;
         line-height: 10px;
-        padding: 0 3% 0 20px;
+        padding: 0 3% 0 15px;
         margin-top: 30px;
+    }
+    .footer-logo > img {
+        height: 55px;
+    }
+    .footer-barrierfree,
+    .footer-gov {
+        margin-top: 10px;
+    }
+    .footer-barrierfree > img,
+    .footer-gov > img {
+        height: 40px;
     }
     .footer-copyright {
         height: 46px;
@@ -2284,12 +2395,12 @@ h4 {
         padding: 0 1% 0 1.5%;
     }
     .titlebar-left {
-        width: 25.4%;
-        max-width: 25.4%;
+        width: 40.4%;
+        max-width: 40.4%;
     }
     .titlebar-right {
-        width: 39.5%;
-        max-width: 39.5%;
+        width: 58.5%;
+        max-width: 58.5%;
     }
     .navbar {
         min-height: 170px;
@@ -2483,40 +2594,59 @@ h4 {
         font-size: 0.7em;
     }
     .footer-first > a, .footer-second > a,
-    .footer-third > a,.footer-forth > a {
+    .footer-third > a,.footer-fifth > a {
         margin: 5px 0;
     }
     .footer-first {
-        width: 23%;
-        max-width: 23%;
+        width: 22%;
+        max-width: 22%;
         height: 140px;
         line-height: 25px;
         padding: 0 15px 0 1%;
         margin-top: 30px;
     }
     .footer-second {
-        width: 23.3%;
-        max-width: 23.3%;
+        width: 22%;
+        max-width: 22%;
         height: 140px;
         line-height: 25px;
         padding: 0 15px;
         margin-top: 30px;
     }
     .footer-third {
-        width: 24.7%;
-        max-width: 24.7%;
+        width: 13%;
+        max-width: 13%;
         height: 140px;
         line-height: 25px;
-        padding: 0 20px;
+        padding: 0 15px;
         margin-top: 30px;
     }
     .footer-forth {
+        width: 14%;
+        max-width: 14%;
+        height: 140px;
+        line-height: 25px;
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+    .footer-fifth {
         width: 29%;
         max-width: 29%;
         height: 140px;
         line-height: 10px;
         padding: 0 1% 0 15px;
         margin-top: 30px;
+    }
+    .footer-logo > img {
+        height: 50px;
+    }
+    .footer-barrierfree,
+    .footer-gov {
+        margin-top: 15px;
+    }
+    .footer-barrierfree > img,
+    .footer-gov > img {
+        height: 35px;
     }
     .footer-copyright {
         height: 46px;
@@ -2588,7 +2718,7 @@ h4 {
         min-height: 36px;
         height: 36px;
         line-height: 36px;
-        padding: 0 9.4% 0 9.4%;
+        padding: 0 8.4% 0 8.4%;
     }
     .titlebar-left {
         display: none;
@@ -2597,45 +2727,70 @@ h4 {
         z-index: 2;
         width: 100%;
         max-width: 100%;
-        top: 88px;
+        top: 156px;
         left: 0;
         background-color: #4f9588;
         border-bottom: 3px solid #c2c2c2;
+        padding: 0 4%;
+    }
+    .titlebar-left > span {
+        display: none;
     }
     .titlebar-left > a,
     .titlebar-left > a:link {
         float: left;
-    }
-    .titlebar-left > a:first-child,
-    .titlebar-left > a:nth-child(2) {
-        width: 30.9%;
-        max-width: 30.9%;
+        width: 30%;
+        max-width: 30%;
         height: 37px;
         min-height: 37px;
-        border: 1px solid #ffffff;
+        border: 2px solid #ffffff;
         border-radius: 3px;
         text-align: center;
         font-size: 0.9em;
-    }
-    .titlebar-left > a:first-child {
-        margin: 14px 3% 14px 4.7%;
-        
-    }
-    .titlebar-left > a:nth-child(2) {
-        margin: 14px 0;
-        
-    }
-    .titlebar-left > a:last-child {
-        display: inline;
-        margin: 14px 12.5% 14px 14%;
-        padding: 0;
-        font-size: 1.6em;
+        margin: 14px 1%;
     }
     .titlebar-right {
         float: none;
         text-align: center;
         width: 100%;
         max-width: 100%;
+    }
+    .titlebar-right > a,
+    .titlebar-right > a:link,
+    .titlebar-right > a:visited {
+        padding: 2%;
+    }
+    .search-container {
+        display: none;
+        float: none;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 68px;
+        max-width: 100%;
+        top: 91px;
+        left: 0;
+        background-color: #4f9588;
+        border-bottom: 3px solid #c2c2c2;
+        padding: 0 4%;
+        text-align: left;
+    }
+    .search-box {
+        width: 55%;
+        height: 36px;
+        margin-top: 13px;
+    }
+    .search-button {
+        height: 36px;
+        margin-top: 13px;
+    }
+    .search-container > a,
+    .search-container > a:link,
+    .search-container > a:hover {
+        display: inline;
+        margin: 15px 0 15px 15%;
+        padding: 0;
+        font-size: 1.6em;
     }
     .facebook,
     .instagram,
@@ -2686,7 +2841,7 @@ h4 {
         display: none;
         position: absolute;
         z-index: 2; 
-        top: 118px; 
+        top: 186px; 
         left: 0; 
         overflow-y: scroll; 
         height: 300px;
@@ -3042,17 +3197,18 @@ h4 {
     .footer-link {
         font-size: 0.8em;
         height: 432px;
+        position: relative;
     }
     .footer-first,
     .footer-second,
     .footer-third,
-    .footer-forth {
+    .footer-fifth {
         float: none;
         border: none;
         width: 100%;
         max-width: 100%;
         margin: 0;
-        line-height: 12 px;
+        line-height: 12px;
     }
     .footer-first {
         padding: 28px 0 0 11.9%;
@@ -3062,8 +3218,30 @@ h4 {
         padding-left: 11.9%;
     }
     .footer-forth {
+        position: absolute;
+        top: 250px;
+        left: 40%;
+        float: none;
+        border: none;
+        margin: 0;
+        line-height: 12px;
+        width: 50%;
+        max-width: 50%;
+    }
+    .footer-fifth {
         padding: 15px 0 0 11.9%;
         line-height: 5px;
+    }
+    .footer-logo {
+        display: none;
+    }
+    .footer-barrierfree,
+    .footer-gov {
+        margin-top: 0;
+    }
+    .footer-barrierfree > img,
+    .footer-gov > img {
+        height: 40px;
     }
     .footer-copyright {
         background-image: url('../content/images/titlebar_image_phone.png');
