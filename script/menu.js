@@ -7,6 +7,7 @@
     menuClose = document.getElementsByClassName("menu-close")[0];
     //
     if (document.addEventListener){
+        window.addEventListener("resize", ResizeWindow, false);
         menu1.addEventListener("click", MenuToggle, false);
         menu2.addEventListener("click", MenuToggle, false);
         menuBar.addEventListener("click", OpenAndCloseMenu, false);
@@ -14,6 +15,7 @@
             OpenAndCloseMenu("close");
         } , false);
     } else if (document.attachEvent) {
+        window.attachEvent("onresize", ResizeWindow, false);
         menu1.attachEvent("onclick", MenuToggle);
         menu2.attachEvent("onclick", MenuToggle);
         menuBar.attachEvent("onclick", OpenAndCloseMenu);
@@ -101,19 +103,23 @@
     function OpenAndCloseMenu(action) {
         var titlebarLeft = document.getElementsByClassName("titlebar-left")[0];
         var menuCollection = document.getElementsByClassName("menu-collection")[0];
+        var searchCollection = document.getElementsByClassName("search-container")[0];
         //
         if (action === "close") {
             titlebarLeft.style.display = "none";
             menuCollection.style.display = "none";
+            searchCollection.style.display = "none";
         } else {
             if (window.getComputedStyle(titlebarLeft).display === "none") {
                 titlebarLeft.style.display = "block";
                 menuCollection.style.display = "block";
                 menuCollection.style.height = GetmenuCollectionHeight();
+                searchCollection.style.display = "inline-block";
             } else {
                 titlebarLeft.style.display = "none";
                 menuCollection.style.display = "none";
                 menuCollection.style.height = "0";
+                searchCollection.style.display = "none";
             }
         }
     }
@@ -124,19 +130,19 @@
         //
         switch (true) {
             case (clientHeight <= 320):
-                height = "150px";
+                height = "90px";
                 break;
             case (clientHeight > 320 && clientHeight <= 375):
-                height = "170px";
+                height = "110px";
                 break;
             case (clientHeight > 375 && clientHeight <= 480):
-                height = "280px";
+                height = "220px";
                 break;
             case (clientHeight > 481 && clientHeight <= 667):
-                height = "380px";
+                height = "320px";
                 break;
             case (clientHeight > 667 && clientHeight <= 800):
-                height = "580px";
+                height = "520px";
                 break;
             default:
             height = "280px";
@@ -144,6 +150,18 @@
         }
         //
         return height;
+    }
+
+    function ResizeWindow() {
+        if (window.innerWidth >= 768) {
+            var titlebarLeft = document.getElementsByClassName("titlebar-left")[0];
+            var menuCollection = document.getElementsByClassName("menu-collection")[0];
+            var searchCollection = document.getElementsByClassName("search-container")[0];
+            //
+            titlebarLeft.style.display = "block";
+            menuCollection.style.display = "block";
+            searchCollection.style.display = "inline-block";
+        }
     }
 })();
 
