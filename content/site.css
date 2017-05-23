@@ -244,8 +244,6 @@ h4 {
     width: 100%;
     max-width: 100%;
     text-align: center;
-    filter: alpha(opacity=0.9);
-    opacity: 0.9;
     left: 0;
     padding: 0 6.8%;
 }
@@ -2913,7 +2911,6 @@ h4 {
     .submenu {
         position: relative;
         text-align: left;
-        opacity: 1;
         padding: 0;
     }
     .submenu > li,
